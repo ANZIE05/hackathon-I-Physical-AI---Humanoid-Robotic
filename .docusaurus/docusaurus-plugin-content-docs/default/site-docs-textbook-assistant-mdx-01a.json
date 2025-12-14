@@ -1,0 +1,24 @@
+{
+  "id": "textbook-assistant",
+  "title": "Textbook Assistant",
+  "description": "",
+  "source": "@site/docs/textbook-assistant.mdx",
+  "sourceDirName": ".",
+  "slug": "/textbook-assistant",
+  "permalink": "/physical-ai-humanoid-robotics-textbook/docs/textbook-assistant",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/textbook-assistant.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 99,
+  "frontMatter": {
+    "title": "Textbook Assistant",
+    "sidebar_position": 99
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Troubleshooting and Limitations",
+    "permalink": "/physical-ai-humanoid-robotics-textbook/docs/appendices/troubleshooting"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "how-to-use",
+  "title": "How to Use This Book",
+  "description": "This textbook is designed to provide a comprehensive learning experience in Physical AI and Humanoid Robotics. This guide will help you navigate the content effectively and make the most of your learning journey.",
+  "source": "@site/docs/how-to-use.md",
+  "sourceDirName": ".",
+  "slug": "/how-to-use",
+  "permalink": "/physical-ai-humanoid-robotics-textbook/docs/how-to-use",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/how-to-use.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Learning Outcomes",
+    "permalink": "/physical-ai-humanoid-robotics-textbook/docs/learning-outcomes"
+  },
+  "next": {
+    "title": "Tooling and Environment Overview",
+    "permalink": "/physical-ai-humanoid-robotics-textbook/docs/tooling-environment"
+  }
+}

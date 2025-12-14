@@ -1,0 +1,27 @@
+{
+  "id": "learning-outcomes",
+  "title": "Learning Outcomes",
+  "description": "This textbook is designed to provide comprehensive learning outcomes across all aspects of Physical AI and Humanoid Robotics. Each learning outcome is aligned with specific modules and assessment projects to ensure measurable progress.",
+  "source": "@site/docs/learning-outcomes.md",
+  "sourceDirName": ".",
+  "slug": "/learning-outcomes",
+  "permalink": "/physical-ai-humanoid-robotics-textbook/docs/learning-outcomes",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/learning-outcomes.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Why Physical AI Matters",
+    "permalink": "/physical-ai-humanoid-robotics-textbook/docs/why-physical-ai-matters"
+  },
+  "next": {
+    "title": "How to Use This Book",
+    "permalink": "/physical-ai-humanoid-robotics-textbook/docs/how-to-use"
+  }
+}

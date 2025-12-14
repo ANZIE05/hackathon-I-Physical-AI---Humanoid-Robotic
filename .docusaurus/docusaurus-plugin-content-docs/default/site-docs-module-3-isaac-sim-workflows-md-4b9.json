@@ -1,0 +1,18 @@
+{
+  "id": "module-3/isaac-sim-workflows",
+  "title": "Isaac Sim Workflows",
+  "description": "Overview",
+  "source": "@site/docs/module-3/isaac-sim-workflows.md",
+  "sourceDirName": "module-3",
+  "slug": "/module-3/isaac-sim-workflows",
+  "permalink": "/physical-ai-humanoid-robotics-textbook/docs/module-3/isaac-sim-workflows",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-3/isaac-sim-workflows.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  }
+}

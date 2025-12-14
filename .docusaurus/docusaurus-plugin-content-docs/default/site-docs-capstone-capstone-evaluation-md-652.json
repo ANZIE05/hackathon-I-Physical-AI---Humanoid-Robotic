@@ -1,0 +1,27 @@
+{
+  "id": "capstone/capstone-evaluation",
+  "title": "Capstone Project Evaluation",
+  "description": "Overview",
+  "source": "@site/docs/capstone/capstone-evaluation.md",
+  "sourceDirName": "capstone",
+  "slug": "/capstone/capstone-evaluation",
+  "permalink": "/physical-ai-humanoid-robotics-textbook/docs/capstone/capstone-evaluation",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/capstone/capstone-evaluation.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "End-to-End Pipeline",
+    "permalink": "/physical-ai-humanoid-robotics-textbook/docs/capstone/end-to-end-pipeline"
+  },
+  "next": {
+    "title": "ROS 2 Package Project",
+    "permalink": "/physical-ai-humanoid-robotics-textbook/docs/assessments/ros2-project"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "module-4/vla-fundamentals",
+  "title": "Vision-Language-Action (VLA) Fundamentals",
+  "description": "This section introduces Vision-Language-Action systems, which represent the integration of perception, reasoning, and action in Physical AI. VLA systems enable robots to understand visual and linguistic inputs and translate them into physical actions.",
+  "source": "@site/docs/module-4/vla-fundamentals.md",
+  "sourceDirName": "module-4",
+  "slug": "/module-4/vla-fundamentals",
+  "permalink": "/physical-ai-humanoid-robotics-textbook/docs/module-4/vla-fundamentals",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-4/vla-fundamentals.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Sim-to-Real Principles",
+    "permalink": "/physical-ai-humanoid-robotics-textbook/docs/module-3/sim-to-real-principles"
+  },
+  "next": {
+    "title": "Capstone: Autonomous Humanoid Architecture",
+    "permalink": "/physical-ai-humanoid-robotics-textbook/docs/capstone/capstone-architecture"
+  }
+}

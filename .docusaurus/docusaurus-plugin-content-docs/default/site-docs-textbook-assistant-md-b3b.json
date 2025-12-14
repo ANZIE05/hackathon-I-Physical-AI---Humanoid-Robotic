@@ -1,0 +1,17 @@
+{
+  "id": "textbook-assistant",
+  "title": "Textbook Assistant",
+  "description": "",
+  "source": "@site/docs/textbook-assistant.md",
+  "sourceDirName": ".",
+  "slug": "/textbook-assistant",
+  "permalink": "/physical-ai-humanoid-robotics-textbook/docs/textbook-assistant",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/textbook-assistant.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Textbook Assistant"
+  }
+}

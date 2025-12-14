@@ -1,0 +1,27 @@
+{
+  "id": "appendices/troubleshooting",
+  "title": "Troubleshooting and Limitations",
+  "description": "This appendix provides comprehensive troubleshooting guidance for common issues encountered in Physical AI and Humanoid Robotics development, along with important limitations and considerations that practitioners should understand.",
+  "source": "@site/docs/appendices/troubleshooting.md",
+  "sourceDirName": "appendices",
+  "slug": "/appendices/troubleshooting",
+  "permalink": "/physical-ai-humanoid-robotics-textbook/docs/appendices/troubleshooting",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/appendices/troubleshooting.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Further Learning Paths",
+    "permalink": "/physical-ai-humanoid-robotics-textbook/docs/appendices/further-learning"
+  },
+  "next": {
+    "title": "Textbook Assistant",
+    "permalink": "/physical-ai-humanoid-robotics-textbook/docs/textbook-assistant"
+  }
+}

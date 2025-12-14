@@ -1,0 +1,27 @@
+{
+  "id": "hardware/lab-models",
+  "title": "Lab Models",
+  "description": "Overview",
+  "source": "@site/docs/hardware/lab-models.md",
+  "sourceDirName": "hardware",
+  "slug": "/hardware/lab-models",
+  "permalink": "/physical-ai-humanoid-robotics-textbook/docs/hardware/lab-models",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/hardware/lab-models.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Robot Options",
+    "permalink": "/physical-ai-humanoid-robotics-textbook/docs/hardware/robot-options"
+  },
+  "next": {
+    "title": "RAG Chatbot Integration Overview",
+    "permalink": "/physical-ai-humanoid-robotics-textbook/docs/rag/chatbot-overview"
+  }
+}

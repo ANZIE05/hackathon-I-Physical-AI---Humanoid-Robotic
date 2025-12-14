@@ -1,0 +1,27 @@
+{
+  "id": "tooling-environment",
+  "title": "Tooling and Environment Overview",
+  "description": "This textbook relies on a comprehensive set of tools and technologies that form the foundation for Physical AI and Humanoid Robotics development. Understanding these tools and how to set up your environment is crucial for success in this course.",
+  "source": "@site/docs/tooling-environment.md",
+  "sourceDirName": ".",
+  "slug": "/tooling-environment",
+  "permalink": "/physical-ai-humanoid-robotics-textbook/docs/tooling-environment",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tooling-environment.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to Use This Book",
+    "permalink": "/physical-ai-humanoid-robotics-textbook/docs/how-to-use"
+  },
+  "next": {
+    "title": "Weekly Learning Flow",
+    "permalink": "/physical-ai-humanoid-robotics-textbook/docs/weekly-breakdown"
+  }
+}

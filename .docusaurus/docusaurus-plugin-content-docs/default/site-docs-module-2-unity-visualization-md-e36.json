@@ -1,0 +1,27 @@
+{
+  "id": "module-2/unity-visualization",
+  "title": "Unity Visualization",
+  "description": "Overview",
+  "source": "@site/docs/module-2/unity-visualization.md",
+  "sourceDirName": "module-2",
+  "slug": "/module-2/unity-visualization",
+  "permalink": "/physical-ai-humanoid-robotics-textbook/docs/module-2/unity-visualization",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-2/unity-visualization.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Gazebo Workflows",
+    "permalink": "/physical-ai-humanoid-robotics-textbook/docs/module-2/gazebo-workflows"
+  },
+  "next": {
+    "title": "Digital Twin Practical Labs",
+    "permalink": "/physical-ai-humanoid-robotics-textbook/docs/module-2/digital-twin-practical-labs"
+  }
+}

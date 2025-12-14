@@ -1,0 +1,23 @@
+{
+  "id": "intro",
+  "title": "Introduction to Physical AI & Humanoid Robotics",
+  "description": "Welcome to the comprehensive textbook on Physical AI and Humanoid Robotics. This course bridges the gap between digital AI (models, agents, LLMs) and physical embodiment (robots, sensors, actuators), preparing you for the future of embodied intelligence.",
+  "source": "@site/docs/intro.md",
+  "sourceDirName": ".",
+  "slug": "/intro",
+  "permalink": "/physical-ai-humanoid-robotics-textbook/docs/intro",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/intro.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "Why Physical AI Matters",
+    "permalink": "/physical-ai-humanoid-robotics-textbook/docs/why-physical-ai-matters"
+  }
+}

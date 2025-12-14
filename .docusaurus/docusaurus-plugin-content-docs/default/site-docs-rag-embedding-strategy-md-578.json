@@ -1,0 +1,27 @@
+{
+  "id": "rag/embedding-strategy",
+  "title": "Embedding Strategy",
+  "description": "This section details the embedding strategy for the Retrieval-Augmented Generation (RAG) system in the Physical AI & Humanoid Robotics textbook. The embedding strategy is crucial for enabling accurate content retrieval and maintaining the system's ability to answer questions based only on textbook content.",
+  "source": "@site/docs/rag/embedding-strategy.md",
+  "sourceDirName": "rag",
+  "slug": "/rag/embedding-strategy",
+  "permalink": "/physical-ai-humanoid-robotics-textbook/docs/rag/embedding-strategy",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/rag/embedding-strategy.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Content Chunking Strategy",
+    "permalink": "/physical-ai-humanoid-robotics-textbook/docs/rag/content-chunking"
+  },
+  "next": {
+    "title": "Response Logic and Safety Mechanisms",
+    "permalink": "/physical-ai-humanoid-robotics-textbook/docs/rag/response-logic"
+  }
+}
