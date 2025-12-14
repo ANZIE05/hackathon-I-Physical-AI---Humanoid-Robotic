@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-module-1/ros2-review-questions" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">ROS 2 Review Questions | Physical AI &amp; Humanoid Robotics</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://your-organization.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://your-organization.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://your-organization.github.io/docs/module-1/ros2-review-questions"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="ROS 2 Review Questions | Physical AI &amp; Humanoid Robotics"><meta data-rh="true" name="description" content="Overview"><meta data-rh="true" property="og:description" content="Overview"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://your-organization.github.io/docs/module-1/ros2-review-questions"><link data-rh="true" rel="alternate" href="https://your-organization.github.io/docs/module-1/ros2-review-questions" hreflang="en"><link data-rh="true" rel="alternate" href="https://your-organization.github.io/docs/module-1/ros2-review-questions" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ROS 2 Review Questions","item":"https://your-organization.github.io/docs/module-1/ros2-review-questions"}]}</script><link rel="stylesheet" href="/assets/css/styles.5361cf20.css">
+<script src="/assets/js/runtime~main.6e6b0d05.js" defer="defer"></script>
+<script src="/assets/js/main.b717d702.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/logo.svg" alt="Physical AI Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/logo.svg" alt="Physical AI Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Physical AI &amp; Humanoid Robotics</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/intro">Textbook</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/your-organization/physical-ai-humanoid-robotics-textbook" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="true" href="/docs/intro"><span title="Introduction" class="categoryLinkLabel_W154">Introduction</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/intro"><span title="Introduction to Physical AI &amp; Humanoid Robotics" class="linkLabel_WmDU">Introduction to Physical AI &amp; Humanoid Robotics</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/why-physical-ai-matters"><span title="Why Physical AI Matters" class="linkLabel_WmDU">Why Physical AI Matters</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/learning-outcomes"><span title="Learning Outcomes" class="linkLabel_WmDU">Learning Outcomes</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/how-to-use"><span title="How to Use This Book" class="linkLabel_WmDU">How to Use This Book</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/tooling-environment"><span title="Tooling and Environment Overview" class="linkLabel_WmDU">Tooling and Environment Overview</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/weekly-breakdown"><span title="Weekly Learning Flow" class="linkLabel_WmDU">Weekly Learning Flow</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/docs/module-1/ros2-fundamentals"><span title="Module 1: The Robotic Nervous System (ROS 2)" class="categoryLinkLabel_W154">Module 1: The Robotic Nervous System (ROS 2)</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/module-1/ros2-fundamentals"><span title="ROS 2 Fundamentals" class="linkLabel_WmDU">ROS 2 Fundamentals</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/module-1/ros2-architecture"><span title="ROS 2 Architecture" class="linkLabel_WmDU">ROS 2 Architecture</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/module-1/urdf-basics"><span title="URDF Basics" class="linkLabel_WmDU">URDF Basics</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/module-1/rclpy-integration"><span title="ROS 2 Python Integration (rclpy)" class="linkLabel_WmDU">ROS 2 Python Integration (rclpy)</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/module-1/ros2-practical-labs"><span title="ROS 2 Practical Labs" class="linkLabel_WmDU">ROS 2 Practical Labs</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/module-1/ros2-review-questions"><span title="ROS 2 Review Questions" class="linkLabel_WmDU">ROS 2 Review Questions</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="true" href="/docs/module-2/gazebo-fundamentals"><span title="Module 2: The Digital Twin (Gazebo &amp; Unity)" class="categoryLinkLabel_W154">Module 2: The Digital Twin (Gazebo &amp; Unity)</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/module-2/gazebo-fundamentals"><span title="Gazebo Fundamentals" class="linkLabel_WmDU">Gazebo Fundamentals</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/module-2/physics-simulation"><span title="Physics Simulation" class="linkLabel_WmDU">Physics Simulation</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/module-2/sensor-simulation"><span title="Sensor Simulation" class="linkLabel_WmDU">Sensor Simulation</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/module-2/gazebo-workflows"><span title="Gazebo Workflows" class="linkLabel_WmDU">Gazebo Workflows</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/module-2/unity-visualization"><span title="Unity Visualization" class="linkLabel_WmDU">Unity Visualization</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/module-2/digital-twin-practical-labs"><span title="Digital Twin Practical Labs" class="linkLabel_WmDU">Digital Twin Practical Labs</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/module-2/digital-twin-review-questions"><span title="Digital Twin Review Questions" class="linkLabel_WmDU">Digital Twin Review Questions</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="true" href="/docs/module-3/isaac-sim-introduction"><span title="Module 3: The AI-Robot Brain (NVIDIA Isaac)" class="categoryLinkLabel_W154">Module 3: The AI-Robot Brain (NVIDIA Isaac)</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/module-3/isaac-sim-introduction"><span title="Isaac Sim Introduction" class="linkLabel_WmDU">Isaac Sim Introduction</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/module-3/isaac-ros-integration"><span title="Isaac ROS Integration" class="linkLabel_WmDU">Isaac ROS Integration</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/module-3/vslam-systems"><span title="VSLAM Systems" class="linkLabel_WmDU">VSLAM Systems</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/module-3/sim-to-real-principles"><span title="Sim-to-Real Principles" class="linkLabel_WmDU">Sim-to-Real Principles</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="true" href="/docs/module-4/vla-fundamentals"><span title="Module 4: Vision-Language-Action (VLA)" class="categoryLinkLabel_W154">Module 4: Vision-Language-Action (VLA)</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/module-4/vla-fundamentals"><span title="Vision-Language-Action (VLA) Fundamentals" class="linkLabel_WmDU">Vision-Language-Action (VLA) Fundamentals</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="true" href="/docs/capstone/capstone-architecture"><span title="Capstone Project" class="categoryLinkLabel_W154">Capstone Project</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/capstone/capstone-architecture"><span title="Capstone: Autonomous Humanoid Architecture" class="linkLabel_WmDU">Capstone: Autonomous Humanoid Architecture</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/capstone/end-to-end-pipeline"><span title="End-to-End Pipeline" class="linkLabel_WmDU">End-to-End Pipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/capstone/capstone-evaluation"><span title="Capstone Project Evaluation" class="linkLabel_WmDU">Capstone Project Evaluation</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/assessments/ros2-project"><span title="Assessment Projects" class="categoryLinkLabel_W154">Assessment Projects</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/hardware/workstation-requirements"><span title="Hardware &amp; Lab Architecture" class="categoryLinkLabel_W154">Hardware &amp; Lab Architecture</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/rag/chatbot-overview"><span title="RAG Chatbot Integration" class="categoryLinkLabel_W154">RAG Chatbot Integration</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/appendices/glossary"><span title="Appendices" class="categoryLinkLabel_W154">Appendices</span></a></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/textbook-assistant"><span title="Textbook Assistant" class="linkLabel_WmDU">Textbook Assistant</span></a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Module 1: The Robotic Nervous System (ROS 2)</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">ROS 2 Review Questions</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>ROS 2 Review Questions</h1></header>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="overview">Overview<a href="#overview" class="hash-link" aria-label="Direct link to Overview" title="Direct link to Overview" translate="no">​</a></h2>
+<p>This section contains comprehensive review questions covering all aspects of ROS 2 fundamentals, architecture, and practical implementation. These questions are designed to test understanding and prepare students for advanced robotics applications.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="module-1-the-robotic-nervous-system-ros-2">Module 1: The Robotic Nervous System (ROS 2)<a href="#module-1-the-robotic-nervous-system-ros-2" class="hash-link" aria-label="Direct link to Module 1: The Robotic Nervous System (ROS 2)" title="Direct link to Module 1: The Robotic Nervous System (ROS 2)" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="fundamentals-and-core-concepts">Fundamentals and Core Concepts<a href="#fundamentals-and-core-concepts" class="hash-link" aria-label="Direct link to Fundamentals and Core Concepts" title="Direct link to Fundamentals and Core Concepts" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="question-1-ros-2-vs-ros-1">Question 1: ROS 2 vs ROS 1<a href="#question-1-ros-2-vs-ros-1" class="hash-link" aria-label="Direct link to Question 1: ROS 2 vs ROS 1" title="Direct link to Question 1: ROS 2 vs ROS 1" translate="no">​</a></h4>
+<p><strong>Difficulty</strong>: Basic</p>
+<p>Explain the key differences between ROS 1 and ROS 2, focusing on:</p>
+<ol>
+<li class="">Communication architecture</li>
+<li class="">Real-time capabilities</li>
+<li class="">Multi-robot support</li>
+<li class="">Security features</li>
+</ol>
+<p><strong>Answer Guide</strong>:</p>
+<ul>
+<li class="">ROS 1 uses a centralized master architecture, while ROS 2 uses DDS (Data Distribution Service) for decentralized communication</li>
+<li class="">ROS 2 has enhanced real-time support through DDS quality of service settings</li>
+<li class="">ROS 2 provides better multi-robot support with domain IDs</li>
+<li class="">ROS 2 includes built-in security features like authentication and encryption</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="question-2-core-communication-patterns">Question 2: Core Communication Patterns<a href="#question-2-core-communication-patterns" class="hash-link" aria-label="Direct link to Question 2: Core Communication Patterns" title="Direct link to Question 2: Core Communication Patterns" translate="no">​</a></h4>
+<p><strong>Difficulty</strong>: Basic</p>
+<p>Describe the three main communication patterns in ROS 2 and provide an example use case for each:</p>
+<ol>
+<li class="">Topics (Publish/Subscribe)</li>
+<li class="">Services (Request/Response)</li>
+<li class="">Actions (Goal-Based Communication)</li>
+</ol>
+<p><strong>Answer Guide</strong>:</p>
+<ul>
+<li class="">Topics: Continuous data streams like sensor data, robot state (e.g., laser scans, camera images)</li>
+<li class="">Services: One-time requests with immediate responses (e.g., calibration, configuration queries)</li>
+<li class="">Actions: Long-running tasks with feedback (e.g., navigation goals, manipulation tasks)</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="question-3-node-architecture">Question 3: Node Architecture<a href="#question-3-node-architecture" class="hash-link" aria-label="Direct link to Question 3: Node Architecture" title="Direct link to Question 3: Node Architecture" translate="no">​</a></h4>
+<p><strong>Difficulty</strong>: Intermediate</p>
+<p>Explain the role of nodes in ROS 2 and describe how multiple nodes can coordinate to perform complex robotic tasks.</p>
+<p><strong>Answer Guide</strong>:</p>
+<ul>
+<li class="">Nodes are processes that perform computation and communicate via topics, services, and actions</li>
+<li class="">Nodes encapsulate specific functionality (navigation, perception, control)</li>
+<li class="">Multiple nodes coordinate through shared topics and services</li>
+<li class="">Example: Navigation stack with localization, path planning, and motion control nodes</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="architecture-and-advanced-concepts">Architecture and Advanced Concepts<a href="#architecture-and-advanced-concepts" class="hash-link" aria-label="Direct link to Architecture and Advanced Concepts" title="Direct link to Architecture and Advanced Concepts" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="question-4-quality-of-service-qos">Question 4: Quality of Service (QoS)<a href="#question-4-quality-of-service-qos" class="hash-link" aria-label="Direct link to Question 4: Quality of Service (QoS)" title="Direct link to Question 4: Quality of Service (QoS)" translate="no">​</a></h4>
+<p><strong>Difficulty</strong>: Intermediate</p>
+<p>Explain Quality of Service (QoS) policies in ROS 2 and describe when you would use different policies for:</p>
+<ol>
+<li class="">Critical control commands</li>
+<li class="">Sensor data streams</li>
+<li class="">Logging and debugging information</li>
+</ol>
+<p><strong>Answer Guide</strong>:</p>
+<ul>
+<li class="">QoS controls how data is delivered between nodes</li>
+<li class="">Critical commands: RELIABLE + TRANSIENT_LOCAL + KEEP_LAST (depth=10)</li>
+<li class="">Sensor data: BEST_EFFORT + VOLATILE + KEEP_LAST (depth=5)</li>
+<li class="">Logging: BEST_EFFORT + TRANSIENT_LOCAL + KEEP_ALL</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="question-5-dds-and-middleware">Question 5: DDS and Middleware<a href="#question-5-dds-and-middleware" class="hash-link" aria-label="Direct link to Question 5: DDS and Middleware" title="Direct link to Question 5: DDS and Middleware" translate="no">​</a></h4>
+<p><strong>Difficulty</strong>: Advanced</p>
+<p>Describe the role of DDS (Data Distribution Service) in ROS 2 architecture and explain how it enables distributed robotic systems.</p>
+<p><strong>Answer Guide</strong>:</p>
+<ul>
+<li class="">DDS provides the underlying communication middleware</li>
+<li class="">Enables discovery of nodes across networks</li>
+<li class="">Handles reliability, durability, and performance guarantees</li>
+<li class="">Supports multiple vendors (Fast DDS, Cyclone DDS, RTI Connext)</li>
+<li class="">Enables multi-robot and cloud robotics applications</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="question-6-domain-ids-and-network-configuration">Question 6: Domain IDs and Network Configuration<a href="#question-6-domain-ids-and-network-configuration" class="hash-link" aria-label="Direct link to Question 6: Domain IDs and Network Configuration" title="Direct link to Question 6: Domain IDs and Network Configuration" translate="no">​</a></h4>
+<p><strong>Difficulty</strong>: Intermediate</p>
+<p>How do ROS_DOMAIN_ID and ROS_LOCALHOST_ONLY environment variables affect ROS 2 communication? Provide practical examples of when to use each.</p>
+<p><strong>Answer Guide</strong>:</p>
+<ul>
+<li class="">ROS_DOMAIN_ID (0-232): Isolates different ROS networks (e.g., Domain 0 for simulation, Domain 1 for real robot)</li>
+<li class="">ROS_LOCALHOST_ONLY: Restricts communication to local machine (0=allow network, 1=local only)</li>
+<li class="">Use cases: Multi-robot systems, separating dev/test/production, security</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="urdf-and-robot-modeling">URDF and Robot Modeling<a href="#urdf-and-robot-modeling" class="hash-link" aria-label="Direct link to URDF and Robot Modeling" title="Direct link to URDF and Robot Modeling" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="question-7-urdf-components">Question 7: URDF Components<a href="#question-7-urdf-components" class="hash-link" aria-label="Direct link to Question 7: URDF Components" title="Direct link to Question 7: URDF Components" translate="no">​</a></h4>
+<p><strong>Difficulty</strong>: Basic</p>
+<p>List and explain the three main components that must be defined for each link in a URDF file.</p>
+<p><strong>Answer Guide</strong>:</p>
+<ul>
+<li class="">Visual: How the link appears in visualization (geometry, material, color)</li>
+<li class="">Collision: How the link interacts with the environment (geometry for physics simulation)</li>
+<li class="">Inertial: Mass properties for physics simulation (mass, center of mass, moments of inertia)</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="question-8-joint-types-and-applications">Question 8: Joint Types and Applications<a href="#question-8-joint-types-and-applications" class="hash-link" aria-label="Direct link to Question 8: Joint Types and Applications" title="Direct link to Question 8: Joint Types and Applications" translate="no">​</a></h4>
+<p><strong>Difficulty</strong>: Intermediate</p>
+<p>Describe the different joint types available in URDF and provide a specific use case for each:</p>
+<ol>
+<li class="">Revolute</li>
+<li class="">Continuous</li>
+<li class="">Prismatic</li>
+<li class="">Fixed</li>
+</ol>
+<p><strong>Answer Guide</strong>:</p>
+<ul>
+<li class="">Revolute: Rotational joint with limits (robot elbow with angle constraints)</li>
+<li class="">Continuous: Rotational joint without limits (wheel rotation)</li>
+<li class="">Prismatic: Linear sliding joint with limits (linear actuator)</li>
+<li class="">Fixed: No movement, rigid connection (sensor mount)</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="question-9-xacro-advantages">Question 9: Xacro Advantages<a href="#question-9-xacro-advantages" class="hash-link" aria-label="Direct link to Question 9: Xacro Advantages" title="Direct link to Question 9: Xacro Advantages" translate="no">​</a></h4>
+<p><strong>Difficulty</strong>: Intermediate</p>
+<p>Explain the advantages of using Xacro over plain URDF and provide an example of how Xacro can simplify a complex robot model.</p>
+<p><strong>Answer Guide</strong>:</p>
+<ul>
+<li class="">Advantages: Macros, properties, mathematical expressions, reusability</li>
+<li class="">Example: Using macros to define multiple similar joints/wheels</li>
+<li class="">Simplification: Reduces code duplication, enables parameterization</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="python-integration-rclpy">Python Integration (rclpy)<a href="#python-integration-rclpy" class="hash-link" aria-label="Direct link to Python Integration (rclpy)" title="Direct link to Python Integration (rclpy)" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="question-10-rclpy-vs-rospy">Question 10: rclpy vs rospy<a href="#question-10-rclpy-vs-rospy" class="hash-link" aria-label="Direct link to Question 10: rclpy vs rospy" title="Direct link to Question 10: rclpy vs rospy" translate="no">​</a></h4>
+<p><strong>Difficulty</strong>: Intermediate</p>
+<p>Compare rclpy (ROS 2 Python client library) with rospy (ROS 1 Python client library) in terms of:</p>
+<ol>
+<li class="">Underlying architecture</li>
+<li class="">Performance characteristics</li>
+<li class="">Multi-threading capabilities</li>
+</ol>
+<p><strong>Answer Guide</strong>:</p>
+<ul>
+<li class="">Architecture: rclpy uses rcl (ROS Client Library) as abstraction over DDS</li>
+<li class="">Performance: rclpy may have different performance due to DDS overhead</li>
+<li class="">Threading: rclpy provides better multi-threading support with executors</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="question-11-parameter-management">Question 11: Parameter Management<a href="#question-11-parameter-management" class="hash-link" aria-label="Direct link to Question 11: Parameter Management" title="Direct link to Question 11: Parameter Management" translate="no">​</a></h4>
+<p><strong>Difficulty</strong>: Advanced</p>
+<p>Describe how to implement dynamic parameter reconfiguration in rclpy and explain the benefits for robotic applications.</p>
+<p><strong>Answer Guide</strong>:</p>
+<ul>
+<li class="">Use declare_parameter() and get_parameter() for parameter access</li>
+<li class="">Implement add_on_set_parameters_callback() for dynamic reconfiguration</li>
+<li class="">Benefits: Runtime tuning, adaptation to different environments, debugging</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="question-12-executor-types">Question 12: Executor Types<a href="#question-12-executor-types" class="hash-link" aria-label="Direct link to Question 12: Executor Types" title="Direct link to Question 12: Executor Types" translate="no">​</a></h4>
+<p><strong>Difficulty</strong>: Intermediate</p>
+<p>Explain the different executor types available in rclpy and when to use each one.</p>
+<p><strong>Answer Guide</strong>:</p>
+<ul>
+<li class="">SingleThreadedExecutor: Simple, predictable execution (default)</li>
+<li class="">MultiThreadedExecutor: Better performance for I/O bound tasks</li>
+<li class="">Custom executors: Specialized behavior for specific requirements</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="practical-implementation">Practical Implementation<a href="#practical-implementation" class="hash-link" aria-label="Direct link to Practical Implementation" title="Direct link to Practical Implementation" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="question-13-launch-files">Question 13: Launch Files<a href="#question-13-launch-files" class="hash-link" aria-label="Direct link to Question 13: Launch Files" title="Direct link to Question 13: Launch Files" translate="no">​</a></h4>
+<p><strong>Difficulty</strong>: Basic</p>
+<p>Create a launch file that starts three nodes: a sensor publisher, a data processor, and a command executor.</p>
+<p><strong>Answer Guide</strong>:</p>
+<div class="language-python codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-python codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">from</span><span class="token plain"> launch </span><span class="token keyword" style="color:#00009f">import</span><span class="token plain"> LaunchDescription</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">from</span><span class="token plain"> launch_ros</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">actions </span><span class="token keyword" style="color:#00009f">import</span><span class="token plain"> Node</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">def</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">generate_launch_description</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> LaunchDescription</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        Node</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            package</span><span class="token operator" style="color:#393A34">=</span><span class="token string" style="color:#e3116c">&#x27;my_package&#x27;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            executable</span><span class="token operator" style="color:#393A34">=</span><span class="token string" style="color:#e3116c">&#x27;sensor_publisher&#x27;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            name</span><span class="token operator" style="color:#393A34">=</span><span class="token string" style="color:#e3116c">&#x27;sensor_publisher_node&#x27;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            parameters</span><span class="token operator" style="color:#393A34">=</span><span class="token punctuation" style="color:#393A34">[</span><span class="token punctuation" style="color:#393A34">{</span><span class="token string" style="color:#e3116c">&#x27;param_name&#x27;</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&#x27;param_value&#x27;</span><span class="token punctuation" style="color:#393A34">}</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        </span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        Node</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            package</span><span class="token operator" style="color:#393A34">=</span><span class="token string" style="color:#e3116c">&#x27;my_package&#x27;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            executable</span><span class="token operator" style="color:#393A34">=</span><span class="token string" style="color:#e3116c">&#x27;data_processor&#x27;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            name</span><span class="token operator" style="color:#393A34">=</span><span class="token string" style="color:#e3116c">&#x27;data_processor_node&#x27;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        </span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        Node</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            package</span><span class="token operator" style="color:#393A34">=</span><span class="token string" style="color:#e3116c">&#x27;my_package&#x27;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            executable</span><span class="token operator" style="color:#393A34">=</span><span class="token string" style="color:#e3116c">&#x27;command_executor&#x27;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            name</span><span class="token operator" style="color:#393A34">=</span><span class="token string" style="color:#e3116c">&#x27;command_executor_node&#x27;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        </span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token punctuation" style="color:#393A34">]</span><span class="token punctuation" style="color:#393A34">)</span><br></span></code></pre></div></div>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="question-14-error-handling">Question 14: Error Handling<a href="#question-14-error-handling" class="hash-link" aria-label="Direct link to Question 14: Error Handling" title="Direct link to Question 14: Error Handling" translate="no">​</a></h4>
+<p><strong>Difficulty</strong>: Intermediate</p>
+<p>Describe best practices for error handling in ROS 2 nodes and provide code examples for handling:</p>
+<ol>
+<li class="">Sensor data exceptions</li>
+<li class="">Communication failures</li>
+<li class="">Resource management</li>
+</ol>
+<p><strong>Answer Guide</strong>:</p>
+<ul>
+<li class="">Use try-catch blocks around sensor processing</li>
+<li class="">Implement connection monitoring for publishers/subscribers</li>
+<li class="">Use context managers for resource cleanup</li>
+<li class="">Implement graceful degradation strategies</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="question-15-performance-optimization">Question 15: Performance Optimization<a href="#question-15-performance-optimization" class="hash-link" aria-label="Direct link to Question 15: Performance Optimization" title="Direct link to Question 15: Performance Optimization" translate="no">​</a></h4>
+<p><strong>Difficulty</strong>: Advanced</p>
+<p>Identify and explain five techniques for optimizing ROS 2 node performance, particularly for real-time robotic applications.</p>
+<p><strong>Answer Guide</strong>:</p>
+<ol>
+<li class="">Appropriate QoS settings for different data types</li>
+<li class="">Efficient message sizes and frequencies</li>
+<li class="">Proper threading models and executors</li>
+<li class="">Memory management and garbage collection</li>
+<li class="">Profiling and bottleneck identification</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="safety-and-reliability">Safety and Reliability<a href="#safety-and-reliability" class="hash-link" aria-label="Direct link to Safety and Reliability" title="Direct link to Safety and Reliability" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="question-16-safety-systems">Question 16: Safety Systems<a href="#question-16-safety-systems" class="hash-link" aria-label="Direct link to Question 16: Safety Systems" title="Direct link to Question 16: Safety Systems" translate="no">​</a></h4>
+<p><strong>Difficulty</strong>: Advanced</p>
+<p>Design a safety system architecture for a mobile robot using ROS 2 concepts. Include:</p>
+<ol>
+<li class="">Emergency stop mechanism</li>
+<li class="">Collision avoidance</li>
+<li class="">System monitoring</li>
+</ol>
+<p><strong>Answer Guide</strong>:</p>
+<ul>
+<li class="">Emergency stop: Global topic with high-priority QoS, multiple activation methods</li>
+<li class="">Collision avoidance: Sensor fusion, safety state machine, velocity limiting</li>
+<li class="">System monitoring: Node health checks, resource monitoring, fault detection</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="question-17-fault-tolerance">Question 17: Fault Tolerance<a href="#question-17-fault-tolerance" class="hash-link" aria-label="Direct link to Question 17: Fault Tolerance" title="Direct link to Question 17: Fault Tolerance" translate="no">​</a></h4>
+<p><strong>Difficulty</strong>: Advanced</p>
+<p>Explain how to implement fault tolerance in a ROS 2 system and describe strategies for handling node failures.</p>
+<p><strong>Answer Guide</strong>:</p>
+<ul>
+<li class="">Node monitoring and restart policies</li>
+<li class="">Graceful degradation when nodes fail</li>
+<li class="">Redundant sensors and systems</li>
+<li class="">Error recovery procedures</li>
+<li class="">State preservation and restoration</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="integration-scenarios">Integration Scenarios<a href="#integration-scenarios" class="hash-link" aria-label="Direct link to Integration Scenarios" title="Direct link to Integration Scenarios" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="question-18-multi-robot-systems">Question 18: Multi-Robot Systems<a href="#question-18-multi-robot-systems" class="hash-link" aria-label="Direct link to Question 18: Multi-Robot Systems" title="Direct link to Question 18: Multi-Robot Systems" translate="no">​</a></h4>
+<p><strong>Difficulty</strong>: Advanced</p>
+<p>Describe how to configure ROS 2 for a multi-robot system with 3 robots, including network configuration, topic organization, and coordination strategies.</p>
+<p><strong>Answer Guide</strong>:</p>
+<ul>
+<li class="">Use different ROS_DOMAIN_ID for each robot team</li>
+<li class="">Namespace topics with robot identifiers</li>
+<li class="">Implement coordination through shared topics or services</li>
+<li class="">Consider bandwidth and communication constraints</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="question-19-simulation-integration">Question 19: Simulation Integration<a href="#question-19-simulation-integration" class="hash-link" aria-label="Direct link to Question 19: Simulation Integration" title="Direct link to Question 19: Simulation Integration" translate="no">​</a></h4>
+<p><strong>Difficulty</strong>: Intermediate</p>
+<p>Explain how ROS 2 integrates with simulation environments like Gazebo and describe the benefits of simulation-first development.</p>
+<p><strong>Answer Guide</strong>:</p>
+<ul>
+<li class="">ROS 2 plugins for Gazebo communication</li>
+<li class="">Sensor simulation and physics modeling</li>
+<li class="">Testing in safe, repeatable environment</li>
+<li class="">Rapid prototyping and algorithm validation</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="question-20-ai-integration">Question 20: AI Integration<a href="#question-20-ai-integration" class="hash-link" aria-label="Direct link to Question 20: AI Integration" title="Direct link to Question 20: AI Integration" translate="no">​</a></h4>
+<p><strong>Difficulty</strong>: Advanced</p>
+<p>Describe how to integrate a Python-based AI model (e.g., PyTorch/TensorFlow) with ROS 2 for real-time robotic applications, including performance considerations.</p>
+<p><strong>Answer Guide</strong>:</p>
+<ul>
+<li class="">Use rclpy nodes for ROS communication</li>
+<li class="">Implement efficient data conversion between ROS and AI formats</li>
+<li class="">Consider inference timing and real-time constraints</li>
+<li class="">Use appropriate threading models for AI processing</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="self-assessment-rubric">Self-Assessment Rubric<a href="#self-assessment-rubric" class="hash-link" aria-label="Direct link to Self-Assessment Rubric" title="Direct link to Self-Assessment Rubric" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="beginner-level-0-40-correct">Beginner Level (0-40% correct)<a href="#beginner-level-0-40-correct" class="hash-link" aria-label="Direct link to Beginner Level (0-40% correct)" title="Direct link to Beginner Level (0-40% correct)" translate="no">​</a></h3>
+<ul>
+<li class="">Basic ROS 2 concepts understood</li>
+<li class="">Need significant improvement in practical implementation</li>
+<li class="">Requires additional study on core architecture</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="intermediate-level-41-70-correct">Intermediate Level (41-70% correct)<a href="#intermediate-level-41-70-correct" class="hash-link" aria-label="Direct link to Intermediate Level (41-70% correct)" title="Direct link to Intermediate Level (41-70% correct)" translate="no">​</a></h3>
+<ul>
+<li class="">Good understanding of ROS 2 fundamentals</li>
+<li class="">Can implement basic ROS 2 applications</li>
+<li class="">Need improvement in advanced concepts</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="advanced-level-71-90-correct">Advanced Level (71-90% correct)<a href="#advanced-level-71-90-correct" class="hash-link" aria-label="Direct link to Advanced Level (71-90% correct)" title="Direct link to Advanced Level (71-90% correct)" translate="no">​</a></h3>
+<ul>
+<li class="">Strong understanding of ROS 2 architecture</li>
+<li class="">Can implement complex ROS 2 systems</li>
+<li class="">Ready for advanced robotics applications</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="expert-level-91-100-correct">Expert Level (91-100% correct)<a href="#expert-level-91-100-correct" class="hash-link" aria-label="Direct link to Expert Level (91-100% correct)" title="Direct link to Expert Level (91-100% correct)" translate="no">​</a></h3>
+<ul>
+<li class="">Comprehensive understanding of ROS 2</li>
+<li class="">Can design and implement sophisticated robotic systems</li>
+<li class="">Ready for research and professional development</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="practical-application-questions">Practical Application Questions<a href="#practical-application-questions" class="hash-link" aria-label="Direct link to Practical Application Questions" title="Direct link to Practical Application Questions" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="question-21-system-design-challenge">Question 21: System Design Challenge<a href="#question-21-system-design-challenge" class="hash-link" aria-label="Direct link to Question 21: System Design Challenge" title="Direct link to Question 21: System Design Challenge" translate="no">​</a></h3>
+<p><strong>Difficulty</strong>: Expert</p>
+<p>Design a complete ROS 2 system for a warehouse robot that must:</p>
+<ul>
+<li class="">Navigate autonomously through aisles</li>
+<li class="">Detect and pick up packages</li>
+<li class="">Avoid dynamic obstacles (people, other robots)</li>
+<li class="">Communicate with warehouse management system</li>
+</ul>
+<p>Provide:</p>
+<ol>
+<li class="">System architecture diagram</li>
+<li class="">List of required nodes and their functions</li>
+<li class="">Topic/service/action definitions</li>
+<li class="">QoS policy recommendations</li>
+<li class="">Safety system design</li>
+</ol>
+<p><strong>Expected Answer Elements</strong>:</p>
+<ul>
+<li class="">Perception node (camera, LiDAR processing)</li>
+<li class="">Navigation node (path planning, obstacle avoidance)</li>
+<li class="">Manipulation node (arm control)</li>
+<li class="">Communication node (warehouse interface)</li>
+<li class="">Appropriate QoS for safety-critical vs. best-effort data</li>
+<li class="">Emergency stop and collision avoidance systems</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="question-22-performance-optimization-challenge">Question 22: Performance Optimization Challenge<a href="#question-22-performance-optimization-challenge" class="hash-link" aria-label="Direct link to Question 22: Performance Optimization Challenge" title="Direct link to Question 22: Performance Optimization Challenge" translate="no">​</a></h3>
+<p><strong>Difficulty</strong>: Expert</p>
+<p>Your robot application experiences high CPU usage and occasional message delays. Diagnose potential issues and provide optimization strategies for:</p>
+<ol>
+<li class="">High-frequency sensor data processing</li>
+<li class="">Multiple AI model inferences</li>
+<li class="">Network communication overhead</li>
+<li class="">Memory management</li>
+</ol>
+<p><strong>Expected Answer Elements</strong>:</p>
+<ul>
+<li class="">Threading models and executor optimization</li>
+<li class="">Message rate limiting and filtering</li>
+<li class="">Efficient data structures and algorithms</li>
+<li class="">Resource monitoring and profiling</li>
+<li class="">DDS configuration tuning</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="review-and-preparation-tips">Review and Preparation Tips<a href="#review-and-preparation-tips" class="hash-link" aria-label="Direct link to Review and Preparation Tips" title="Direct link to Review and Preparation Tips" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="study-recommendations">Study Recommendations<a href="#study-recommendations" class="hash-link" aria-label="Direct link to Study Recommendations" title="Direct link to Study Recommendations" translate="no">​</a></h3>
+<ol>
+<li class=""><strong>Practice Implementation</strong>: Implement each concept in code</li>
+<li class=""><strong>Use Documentation</strong>: Refer to official ROS 2 documentation</li>
+<li class=""><strong>Community Resources</strong>: Engage with ROS community forums</li>
+<li class=""><strong>Hands-on Labs</strong>: Complete all practical lab exercises</li>
+<li class=""><strong>Real Projects</strong>: Apply concepts to real robotic systems</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="common-mistakes-to-avoid">Common Mistakes to Avoid<a href="#common-mistakes-to-avoid" class="hash-link" aria-label="Direct link to Common Mistakes to Avoid" title="Direct link to Common Mistakes to Avoid" translate="no">​</a></h3>
+<ul>
+<li class="">Not understanding QoS policies and their impact</li>
+<li class="">Poor error handling in production systems</li>
+<li class="">Inefficient message handling and processing</li>
+<li class="">Ignoring security considerations</li>
+<li class="">Lack of proper testing and validation</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="advanced-topics-for-further-study">Advanced Topics for Further Study<a href="#advanced-topics-for-further-study" class="hash-link" aria-label="Direct link to Advanced Topics for Further Study" title="Direct link to Advanced Topics for Further Study" translate="no">​</a></h3>
+<ul>
+<li class="">ROS 2 security implementation</li>
+<li class="">Real-time systems and determinism</li>
+<li class="">Multi-robot coordination algorithms</li>
+<li class="">Advanced simulation techniques</li>
+<li class="">Hardware integration and embedded systems</li>
+</ul>
+<p>These review questions provide a comprehensive assessment of ROS 2 knowledge and skills, preparing students for advanced robotics applications and real-world system development.</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-1/ros2-review-questions.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/module-1/ros2-practical-labs"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">ROS 2 Practical Labs</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/module-2/gazebo-fundamentals"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Gazebo Fundamentals</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#overview" class="table-of-contents__link toc-highlight">Overview</a></li><li><a href="#module-1-the-robotic-nervous-system-ros-2" class="table-of-contents__link toc-highlight">Module 1: The Robotic Nervous System (ROS 2)</a><ul><li><a href="#fundamentals-and-core-concepts" class="table-of-contents__link toc-highlight">Fundamentals and Core Concepts</a></li><li><a href="#architecture-and-advanced-concepts" class="table-of-contents__link toc-highlight">Architecture and Advanced Concepts</a></li><li><a href="#urdf-and-robot-modeling" class="table-of-contents__link toc-highlight">URDF and Robot Modeling</a></li><li><a href="#python-integration-rclpy" class="table-of-contents__link toc-highlight">Python Integration (rclpy)</a></li><li><a href="#practical-implementation" class="table-of-contents__link toc-highlight">Practical Implementation</a></li><li><a href="#safety-and-reliability" class="table-of-contents__link toc-highlight">Safety and Reliability</a></li><li><a href="#integration-scenarios" class="table-of-contents__link toc-highlight">Integration Scenarios</a></li></ul></li><li><a href="#self-assessment-rubric" class="table-of-contents__link toc-highlight">Self-Assessment Rubric</a><ul><li><a href="#beginner-level-0-40-correct" class="table-of-contents__link toc-highlight">Beginner Level (0-40% correct)</a></li><li><a href="#intermediate-level-41-70-correct" class="table-of-contents__link toc-highlight">Intermediate Level (41-70% correct)</a></li><li><a href="#advanced-level-71-90-correct" class="table-of-contents__link toc-highlight">Advanced Level (71-90% correct)</a></li><li><a href="#expert-level-91-100-correct" class="table-of-contents__link toc-highlight">Expert Level (91-100% correct)</a></li></ul></li><li><a href="#practical-application-questions" class="table-of-contents__link toc-highlight">Practical Application Questions</a><ul><li><a href="#question-21-system-design-challenge" class="table-of-contents__link toc-highlight">Question 21: System Design Challenge</a></li><li><a href="#question-22-performance-optimization-challenge" class="table-of-contents__link toc-highlight">Question 22: Performance Optimization Challenge</a></li></ul></li><li><a href="#review-and-preparation-tips" class="table-of-contents__link toc-highlight">Review and Preparation Tips</a><ul><li><a href="#study-recommendations" class="table-of-contents__link toc-highlight">Study Recommendations</a></li><li><a href="#common-mistakes-to-avoid" class="table-of-contents__link toc-highlight">Common Mistakes to Avoid</a></li><li><a href="#advanced-topics-for-further-study" class="table-of-contents__link toc-highlight">Advanced Topics for Further Study</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Textbook</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/intro">Introduction</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://twitter.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Twitter<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Physical AI & Humanoid Robotics Textbook. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

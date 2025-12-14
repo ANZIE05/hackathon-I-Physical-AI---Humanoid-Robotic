@@ -5,7 +5,7 @@
   "source": "@site/docs/hardware/workstation-requirements.md",
   "sourceDirName": "hardware",
   "slug": "/hardware/workstation-requirements",
-  "permalink": "/physical-ai-humanoid-robotics-textbook/docs/hardware/workstation-requirements",
+  "permalink": "/docs/hardware/workstation-requirements",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/hardware/workstation-requirements.md",
@@ -18,10 +18,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Final Capstone: Autonomous Humanoid with Conversational AI",
-    "permalink": "/physical-ai-humanoid-robotics-textbook/docs/assessments/capstone-project"
+    "permalink": "/docs/assessments/capstone-project"
   },
   "next": {
     "title": "Edge AI Kits",
-    "permalink": "/physical-ai-humanoid-robotics-textbook/docs/hardware/edge-ai-kits"
+    "permalink": "/docs/hardware/edge-ai-kits"
   }
 }

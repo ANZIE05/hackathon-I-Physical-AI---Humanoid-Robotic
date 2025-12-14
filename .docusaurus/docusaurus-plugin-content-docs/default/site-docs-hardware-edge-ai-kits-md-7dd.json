@@ -5,7 +5,7 @@
   "source": "@site/docs/hardware/edge-ai-kits.md",
   "sourceDirName": "hardware",
   "slug": "/hardware/edge-ai-kits",
-  "permalink": "/physical-ai-humanoid-robotics-textbook/docs/hardware/edge-ai-kits",
+  "permalink": "/docs/hardware/edge-ai-kits",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/hardware/edge-ai-kits.md",
@@ -18,10 +18,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Workstation Requirements",
-    "permalink": "/physical-ai-humanoid-robotics-textbook/docs/hardware/workstation-requirements"
+    "permalink": "/docs/hardware/workstation-requirements"
   },
   "next": {
     "title": "Sensor Stack",
-    "permalink": "/physical-ai-humanoid-robotics-textbook/docs/hardware/sensor-stack"
+    "permalink": "/docs/hardware/sensor-stack"
   }
 }

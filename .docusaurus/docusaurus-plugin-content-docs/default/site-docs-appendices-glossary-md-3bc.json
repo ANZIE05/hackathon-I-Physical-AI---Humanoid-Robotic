@@ -5,7 +5,7 @@
   "source": "@site/docs/appendices/glossary.md",
   "sourceDirName": "appendices",
   "slug": "/appendices/glossary",
-  "permalink": "/physical-ai-humanoid-robotics-textbook/docs/appendices/glossary",
+  "permalink": "/docs/appendices/glossary",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/appendices/glossary.md",
@@ -18,10 +18,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Response Logic and Safety Mechanisms",
-    "permalink": "/physical-ai-humanoid-robotics-textbook/docs/rag/response-logic"
+    "permalink": "/docs/rag/response-logic"
   },
   "next": {
     "title": "Tool References",
-    "permalink": "/physical-ai-humanoid-robotics-textbook/docs/appendices/tool-references"
+    "permalink": "/docs/appendices/tool-references"
   }
 }

@@ -5,7 +5,7 @@
   "source": "@site/docs/appendices/further-learning.md",
   "sourceDirName": "appendices",
   "slug": "/appendices/further-learning",
-  "permalink": "/physical-ai-humanoid-robotics-textbook/docs/appendices/further-learning",
+  "permalink": "/docs/appendices/further-learning",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/appendices/further-learning.md",
@@ -18,10 +18,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Tool References",
-    "permalink": "/physical-ai-humanoid-robotics-textbook/docs/appendices/tool-references"
+    "permalink": "/docs/appendices/tool-references"
   },
   "next": {
     "title": "Troubleshooting and Limitations",
-    "permalink": "/physical-ai-humanoid-robotics-textbook/docs/appendices/troubleshooting"
+    "permalink": "/docs/appendices/troubleshooting"
   }
 }

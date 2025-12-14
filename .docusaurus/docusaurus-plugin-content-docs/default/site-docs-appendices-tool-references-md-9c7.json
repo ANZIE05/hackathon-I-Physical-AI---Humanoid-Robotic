@@ -5,7 +5,7 @@
   "source": "@site/docs/appendices/tool-references.md",
   "sourceDirName": "appendices",
   "slug": "/appendices/tool-references",
-  "permalink": "/physical-ai-humanoid-robotics-textbook/docs/appendices/tool-references",
+  "permalink": "/docs/appendices/tool-references",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/appendices/tool-references.md",
@@ -18,10 +18,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Glossary",
-    "permalink": "/physical-ai-humanoid-robotics-textbook/docs/appendices/glossary"
+    "permalink": "/docs/appendices/glossary"
   },
   "next": {
     "title": "Further Learning Paths",
-    "permalink": "/physical-ai-humanoid-robotics-textbook/docs/appendices/further-learning"
+    "permalink": "/docs/appendices/further-learning"
   }
 }

@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-hardware/sensor-stack" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Sensor Stack | Physical AI &amp; Humanoid Robotics</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://your-organization.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://your-organization.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://your-organization.github.io/docs/hardware/sensor-stack"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Sensor Stack | Physical AI &amp; Humanoid Robotics"><meta data-rh="true" name="description" content="Overview"><meta data-rh="true" property="og:description" content="Overview"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://your-organization.github.io/docs/hardware/sensor-stack"><link data-rh="true" rel="alternate" href="https://your-organization.github.io/docs/hardware/sensor-stack" hreflang="en"><link data-rh="true" rel="alternate" href="https://your-organization.github.io/docs/hardware/sensor-stack" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Sensor Stack","item":"https://your-organization.github.io/docs/hardware/sensor-stack"}]}</script><link rel="stylesheet" href="/assets/css/styles.5361cf20.css">
+<script src="/assets/js/runtime~main.6e6b0d05.js" defer="defer"></script>
+<script src="/assets/js/main.b717d702.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/logo.svg" alt="Physical AI Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/logo.svg" alt="Physical AI Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Physical AI &amp; Humanoid Robotics</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/intro">Textbook</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/your-organization/physical-ai-humanoid-robotics-textbook" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="true" href="/docs/intro"><span title="Introduction" class="categoryLinkLabel_W154">Introduction</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/intro"><span title="Introduction to Physical AI &amp; Humanoid Robotics" class="linkLabel_WmDU">Introduction to Physical AI &amp; Humanoid Robotics</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/why-physical-ai-matters"><span title="Why Physical AI Matters" class="linkLabel_WmDU">Why Physical AI Matters</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/learning-outcomes"><span title="Learning Outcomes" class="linkLabel_WmDU">Learning Outcomes</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/how-to-use"><span title="How to Use This Book" class="linkLabel_WmDU">How to Use This Book</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/tooling-environment"><span title="Tooling and Environment Overview" class="linkLabel_WmDU">Tooling and Environment Overview</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/weekly-breakdown"><span title="Weekly Learning Flow" class="linkLabel_WmDU">Weekly Learning Flow</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="true" href="/docs/module-1/ros2-fundamentals"><span title="Module 1: The Robotic Nervous System (ROS 2)" class="categoryLinkLabel_W154">Module 1: The Robotic Nervous System (ROS 2)</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/module-1/ros2-fundamentals"><span title="ROS 2 Fundamentals" class="linkLabel_WmDU">ROS 2 Fundamentals</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/module-1/ros2-architecture"><span title="ROS 2 Architecture" class="linkLabel_WmDU">ROS 2 Architecture</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/module-1/urdf-basics"><span title="URDF Basics" class="linkLabel_WmDU">URDF Basics</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/module-1/rclpy-integration"><span title="ROS 2 Python Integration (rclpy)" class="linkLabel_WmDU">ROS 2 Python Integration (rclpy)</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/module-1/ros2-practical-labs"><span title="ROS 2 Practical Labs" class="linkLabel_WmDU">ROS 2 Practical Labs</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/module-1/ros2-review-questions"><span title="ROS 2 Review Questions" class="linkLabel_WmDU">ROS 2 Review Questions</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="true" href="/docs/module-2/gazebo-fundamentals"><span title="Module 2: The Digital Twin (Gazebo &amp; Unity)" class="categoryLinkLabel_W154">Module 2: The Digital Twin (Gazebo &amp; Unity)</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/module-2/gazebo-fundamentals"><span title="Gazebo Fundamentals" class="linkLabel_WmDU">Gazebo Fundamentals</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/module-2/physics-simulation"><span title="Physics Simulation" class="linkLabel_WmDU">Physics Simulation</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/module-2/sensor-simulation"><span title="Sensor Simulation" class="linkLabel_WmDU">Sensor Simulation</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/module-2/gazebo-workflows"><span title="Gazebo Workflows" class="linkLabel_WmDU">Gazebo Workflows</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/module-2/unity-visualization"><span title="Unity Visualization" class="linkLabel_WmDU">Unity Visualization</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/module-2/digital-twin-practical-labs"><span title="Digital Twin Practical Labs" class="linkLabel_WmDU">Digital Twin Practical Labs</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/module-2/digital-twin-review-questions"><span title="Digital Twin Review Questions" class="linkLabel_WmDU">Digital Twin Review Questions</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="true" href="/docs/module-3/isaac-sim-introduction"><span title="Module 3: The AI-Robot Brain (NVIDIA Isaac)" class="categoryLinkLabel_W154">Module 3: The AI-Robot Brain (NVIDIA Isaac)</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/module-3/isaac-sim-introduction"><span title="Isaac Sim Introduction" class="linkLabel_WmDU">Isaac Sim Introduction</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/module-3/isaac-ros-integration"><span title="Isaac ROS Integration" class="linkLabel_WmDU">Isaac ROS Integration</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/module-3/vslam-systems"><span title="VSLAM Systems" class="linkLabel_WmDU">VSLAM Systems</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/module-3/sim-to-real-principles"><span title="Sim-to-Real Principles" class="linkLabel_WmDU">Sim-to-Real Principles</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="true" href="/docs/module-4/vla-fundamentals"><span title="Module 4: Vision-Language-Action (VLA)" class="categoryLinkLabel_W154">Module 4: Vision-Language-Action (VLA)</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/module-4/vla-fundamentals"><span title="Vision-Language-Action (VLA) Fundamentals" class="linkLabel_WmDU">Vision-Language-Action (VLA) Fundamentals</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="true" href="/docs/capstone/capstone-architecture"><span title="Capstone Project" class="categoryLinkLabel_W154">Capstone Project</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/capstone/capstone-architecture"><span title="Capstone: Autonomous Humanoid Architecture" class="linkLabel_WmDU">Capstone: Autonomous Humanoid Architecture</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/capstone/end-to-end-pipeline"><span title="End-to-End Pipeline" class="linkLabel_WmDU">End-to-End Pipeline</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/capstone/capstone-evaluation"><span title="Capstone Project Evaluation" class="linkLabel_WmDU">Capstone Project Evaluation</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/assessments/ros2-project"><span title="Assessment Projects" class="categoryLinkLabel_W154">Assessment Projects</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/docs/hardware/workstation-requirements"><span title="Hardware &amp; Lab Architecture" class="categoryLinkLabel_W154">Hardware &amp; Lab Architecture</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/hardware/workstation-requirements"><span title="Workstation Requirements" class="linkLabel_WmDU">Workstation Requirements</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/hardware/edge-ai-kits"><span title="Edge AI Kits" class="linkLabel_WmDU">Edge AI Kits</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/hardware/sensor-stack"><span title="Sensor Stack" class="linkLabel_WmDU">Sensor Stack</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/hardware/robot-options"><span title="Robot Options" class="linkLabel_WmDU">Robot Options</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/hardware/lab-models"><span title="Lab Models" class="linkLabel_WmDU">Lab Models</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/rag/chatbot-overview"><span title="RAG Chatbot Integration" class="categoryLinkLabel_W154">RAG Chatbot Integration</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/appendices/glossary"><span title="Appendices" class="categoryLinkLabel_W154">Appendices</span></a></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/textbook-assistant"><span title="Textbook Assistant" class="linkLabel_WmDU">Textbook Assistant</span></a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Hardware &amp; Lab Architecture</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Sensor Stack</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Sensor Stack</h1></header>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="overview">Overview<a href="#overview" class="hash-link" aria-label="Direct link to Overview" title="Direct link to Overview" translate="no">​</a></h2>
+<p>A comprehensive sensor stack is essential for Physical AI and Humanoid Robotics systems. This section covers the selection, integration, and utilization of various sensors to enable perception, navigation, and interaction capabilities.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="sensor-categories">Sensor Categories<a href="#sensor-categories" class="hash-link" aria-label="Direct link to Sensor Categories" title="Direct link to Sensor Categories" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="vision-sensors">Vision Sensors<a href="#vision-sensors" class="hash-link" aria-label="Direct link to Vision Sensors" title="Direct link to Vision Sensors" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>RGB Cameras</strong>: Color image capture for object recognition</li>
+<li class=""><strong>Depth Cameras</strong>: 3D scene understanding</li>
+<li class=""><strong>Stereo Cameras</strong>: Depth estimation and 3D reconstruction</li>
+<li class=""><strong>Thermal Cameras</strong>: Temperature detection and night vision</li>
+<li class=""><strong>Event Cameras</strong>: High-speed motion detection</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="inertial-sensors">Inertial Sensors<a href="#inertial-sensors" class="hash-link" aria-label="Direct link to Inertial Sensors" title="Direct link to Inertial Sensors" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>IMU (Inertial Measurement Unit)</strong>: Acceleration, angular velocity, orientation</li>
+<li class=""><strong>Gyroscope</strong>: Angular velocity measurement</li>
+<li class=""><strong>Accelerometer</strong>: Linear acceleration measurement</li>
+<li class=""><strong>Magnetometer</strong>: Magnetic field and heading measurement</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="range-sensors">Range Sensors<a href="#range-sensors" class="hash-link" aria-label="Direct link to Range Sensors" title="Direct link to Range Sensors" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>LiDAR</strong>: 360-degree distance measurement</li>
+<li class=""><strong>Ultrasonic Sensors</strong>: Short-range obstacle detection</li>
+<li class=""><strong>Time-of-Flight (ToF)</strong>: Precise distance measurement</li>
+<li class=""><strong>Radar</strong>: All-weather detection capability</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="environmental-sensors">Environmental Sensors<a href="#environmental-sensors" class="hash-link" aria-label="Direct link to Environmental Sensors" title="Direct link to Environmental Sensors" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Temperature Sensors</strong>: Environmental and internal temperature</li>
+<li class=""><strong>Humidity Sensors</strong>: Environmental conditions</li>
+<li class=""><strong>Barometric Pressure</strong>: Altitude estimation</li>
+<li class=""><strong>Gas Sensors</strong>: Air quality and chemical detection</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="proprioceptive-sensors">Proprioceptive Sensors<a href="#proprioceptive-sensors" class="hash-link" aria-label="Direct link to Proprioceptive Sensors" title="Direct link to Proprioceptive Sensors" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Joint Encoders</strong>: Joint position and velocity</li>
+<li class=""><strong>Force/Torque Sensors</strong>: Contact force measurement</li>
+<li class=""><strong>Tactile Sensors</strong>: Touch and pressure detection</li>
+<li class=""><strong>Current Sensors</strong>: Motor current and load estimation</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="vision-sensors-1">Vision Sensors<a href="#vision-sensors-1" class="hash-link" aria-label="Direct link to Vision Sensors" title="Direct link to Vision Sensors" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="rgb-cameras">RGB Cameras<a href="#rgb-cameras" class="hash-link" aria-label="Direct link to RGB Cameras" title="Direct link to RGB Cameras" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Resolution</strong>: 720p to 4K depending on application</li>
+<li class=""><strong>Frame Rate</strong>: 30-120 FPS for real-time processing</li>
+<li class=""><strong>Field of View</strong>: 60-180 degrees</li>
+<li class=""><strong>Interface</strong>: USB, MIPI CSI-2, GigE Vision</li>
+<li class=""><strong>ROS Integration</strong>: image_transport, camera_info_manager</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="depth-cameras">Depth Cameras<a href="#depth-cameras" class="hash-link" aria-label="Direct link to Depth Cameras" title="Direct link to Depth Cameras" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Structured Light</strong>: High accuracy at short range (Intel RealSense)</li>
+<li class=""><strong>Stereo Vision</strong>: Good range, moderate accuracy (ZED cameras)</li>
+<li class=""><strong>ToF (Time of Flight)</strong>: Fast, good for medium range (PMD CamBoard)</li>
+<li class=""><strong>Accuracy</strong>: 1-50mm depending on technology and range</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="camera-selection-guide">Camera Selection Guide<a href="#camera-selection-guide" class="hash-link" aria-label="Direct link to Camera Selection Guide" title="Direct link to Camera Selection Guide" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Close Range</strong>: Intel RealSense D435/D455</li>
+<li class=""><strong>Medium Range</strong>: ZED 2i or stereo cameras</li>
+<li class=""><strong>Long Range</strong>: LiDAR + camera fusion</li>
+<li class=""><strong>High Speed</strong>: Event cameras for dynamic scenes</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="inertial-sensors-1">Inertial Sensors<a href="#inertial-sensors-1" class="hash-link" aria-label="Direct link to Inertial Sensors" title="Direct link to Inertial Sensors" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="imu-types">IMU Types<a href="#imu-types" class="hash-link" aria-label="Direct link to IMU Types" title="Direct link to IMU Types" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>6-axis IMU</strong>: Accelerometer + gyroscope</li>
+<li class=""><strong>9-axis IMU</strong>: Accelerometer + gyroscope + magnetometer</li>
+<li class=""><strong>10-axis IMU</strong>: 9-axis + pressure sensor</li>
+<li class=""><strong>Applications</strong>: State estimation, balance control, navigation</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="key-specifications">Key Specifications<a href="#key-specifications" class="hash-link" aria-label="Direct link to Key Specifications" title="Direct link to Key Specifications" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Gyro Range</strong>: ±250 to ±2000 °/s</li>
+<li class=""><strong>Accel Range</strong>: ±2 to ±16 g</li>
+<li class=""><strong>Bias Stability</strong>: &lt;1°/s for high-quality IMUs</li>
+<li class=""><strong>Noise Density</strong>: &lt;10 µg/√Hz for accelerometers</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="integration-with-robotics">Integration with Robotics<a href="#integration-with-robotics" class="hash-link" aria-label="Direct link to Integration with Robotics" title="Direct link to Integration with Robotics" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>State Estimation</strong>: Robot localization and mapping</li>
+<li class=""><strong>Balance Control</strong>: Humanoid robot stability</li>
+<li class=""><strong>Motion Tracking</strong>: Human-robot interaction</li>
+<li class=""><strong>Calibration</strong>: Temperature compensation and bias correction</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="range-sensors-1">Range Sensors<a href="#range-sensors-1" class="hash-link" aria-label="Direct link to Range Sensors" title="Direct link to Range Sensors" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="lidar-technologies">LiDAR Technologies<a href="#lidar-technologies" class="hash-link" aria-label="Direct link to LiDAR Technologies" title="Direct link to LiDAR Technologies" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Spinning LiDAR</strong>: 360° coverage (HDL-64E, VLP-16)</li>
+<li class=""><strong>Solid State</strong>: No moving parts, compact (Ouster, Velodyne Puck)</li>
+<li class=""><strong>Flash LiDAR</strong>: Instant 3D capture</li>
+<li class=""><strong>MEMS Scanning</strong>: Cost-effective solid state option</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="lidar-selection-criteria">LiDAR Selection Criteria<a href="#lidar-selection-criteria" class="hash-link" aria-label="Direct link to LiDAR Selection Criteria" title="Direct link to LiDAR Selection Criteria" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Range</strong>: 5m to 300m depending on application</li>
+<li class=""><strong>Resolution</strong>: 0.1° to 2° angular resolution</li>
+<li class=""><strong>FOV</strong>: 360° horizontal, 10-40° vertical</li>
+<li class=""><strong>Accuracy</strong>: 1-3cm distance accuracy</li>
+<li class=""><strong>Point Rate</strong>: 10K to 2.6M points per second</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="alternative-range-sensors">Alternative Range Sensors<a href="#alternative-range-sensors" class="hash-link" aria-label="Direct link to Alternative Range Sensors" title="Direct link to Alternative Range Sensors" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Ultrasonic</strong>: 2-4m range, low cost, good for close obstacles</li>
+<li class=""><strong>IR Distance</strong>: 0.1-5m, low power, simple integration</li>
+<li class=""><strong>Laser Range Finders</strong>: High accuracy, single point measurement</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="environmental-sensors-1">Environmental Sensors<a href="#environmental-sensors-1" class="hash-link" aria-label="Direct link to Environmental Sensors" title="Direct link to Environmental Sensors" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="temperature-and-humidity">Temperature and Humidity<a href="#temperature-and-humidity" class="hash-link" aria-label="Direct link to Temperature and Humidity" title="Direct link to Temperature and Humidity" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>DHT22</strong>: Basic temperature/humidity sensing</li>
+<li class=""><strong>BME280</strong>: Temperature, humidity, pressure in one chip</li>
+<li class=""><strong>SHT30</strong>: High-accuracy temperature/humidity</li>
+<li class=""><strong>Applications</strong>: Environmental monitoring, thermal management</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="air-quality-sensors">Air Quality Sensors<a href="#air-quality-sensors" class="hash-link" aria-label="Direct link to Air Quality Sensors" title="Direct link to Air Quality Sensors" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>MQ Series</strong>: Gas detection (CO, LPG, smoke)</li>
+<li class=""><strong>SGP30</strong>: TVOC and CO2 equivalent</li>
+<li class=""><strong>CCS811</strong>: Low-power air quality monitoring</li>
+<li class=""><strong>Integration</strong>: Environmental awareness and safety</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="proprioceptive-sensors-1">Proprioceptive Sensors<a href="#proprioceptive-sensors-1" class="hash-link" aria-label="Direct link to Proprioceptive Sensors" title="Direct link to Proprioceptive Sensors" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="joint-position-sensors">Joint Position Sensors<a href="#joint-position-sensors" class="hash-link" aria-label="Direct link to Joint Position Sensors" title="Direct link to Joint Position Sensors" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Incremental Encoders</strong>: Relative position measurement</li>
+<li class=""><strong>Absolute Encoders</strong>: Absolute position measurement</li>
+<li class=""><strong>Potentiometers</strong>: Simple position sensing</li>
+<li class=""><strong>Resolvers</strong>: High-reliability position sensing</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="forcetorque-sensors">Force/Torque Sensors<a href="#forcetorque-sensors" class="hash-link" aria-label="Direct link to Force/Torque Sensors" title="Direct link to Force/Torque Sensors" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>6-axis F/T Sensors</strong>: Full force/torque vector measurement</li>
+<li class=""><strong>Strain Gauge Sensors</strong>: High-precision force measurement</li>
+<li class=""><strong>Optical Sensors</strong>: Non-contact force measurement</li>
+<li class=""><strong>Applications</strong>: Grasping, assembly, human-robot interaction</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="sensor-fusion">Sensor Fusion<a href="#sensor-fusion" class="hash-link" aria-label="Direct link to Sensor Fusion" title="Direct link to Sensor Fusion" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="data-integration">Data Integration<a href="#data-integration" class="hash-link" aria-label="Direct link to Data Integration" title="Direct link to Data Integration" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Kalman Filters</strong>: Optimal state estimation</li>
+<li class=""><strong>Particle Filters</strong>: Non-linear state estimation</li>
+<li class=""><strong>Complementary Filters</strong>: Simple sensor combination</li>
+<li class=""><strong>Extended Kalman Filter</strong>: Non-linear systems</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="fusion-strategies">Fusion Strategies<a href="#fusion-strategies" class="hash-link" aria-label="Direct link to Fusion Strategies" title="Direct link to Fusion Strategies" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Early Fusion</strong>: Combine raw sensor data</li>
+<li class=""><strong>Late Fusion</strong>: Combine processed sensor outputs</li>
+<li class=""><strong>Deep Fusion</strong>: Neural network-based fusion</li>
+<li class=""><strong>Multi-Modal Fusion</strong>: Combine different sensor types</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="ros-2-sensor-integration">ROS 2 Sensor Integration<a href="#ros-2-sensor-integration" class="hash-link" aria-label="Direct link to ROS 2 Sensor Integration" title="Direct link to ROS 2 Sensor Integration" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="standard-interfaces">Standard Interfaces<a href="#standard-interfaces" class="hash-link" aria-label="Direct link to Standard Interfaces" title="Direct link to Standard Interfaces" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>sensor_msgs</strong>: Standard message types for sensors</li>
+<li class=""><strong>geometry_msgs</strong>: Position and orientation messages</li>
+<li class=""><strong>tf2</strong>: Coordinate frame transformations</li>
+<li class=""><strong>image_transport</strong>: Compressed image transport</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="sensor-drivers">Sensor Drivers<a href="#sensor-drivers" class="hash-link" aria-label="Direct link to Sensor Drivers" title="Direct link to Sensor Drivers" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>camera_driver</strong>: Generic camera interface</li>
+<li class=""><strong>imu_driver</strong>: Standard IMU integration</li>
+<li class=""><strong>laser_driver</strong>: LiDAR data processing</li>
+<li class=""><strong>joint_state_publisher</strong>: Joint position reporting</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="sensor-calibration">Sensor Calibration<a href="#sensor-calibration" class="hash-link" aria-label="Direct link to Sensor Calibration" title="Direct link to Sensor Calibration" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="camera-calibration">Camera Calibration<a href="#camera-calibration" class="hash-link" aria-label="Direct link to Camera Calibration" title="Direct link to Camera Calibration" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Intrinsic Parameters</strong>: Focal length, principal point, distortion</li>
+<li class=""><strong>Extrinsic Parameters</strong>: Position and orientation relative to robot</li>
+<li class=""><strong>Tools</strong>: camera_calibration package, Kalibr</li>
+<li class=""><strong>Frequency</strong>: Regular recalibration recommended</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="imu-calibration">IMU Calibration<a href="#imu-calibration" class="hash-link" aria-label="Direct link to IMU Calibration" title="Direct link to IMU Calibration" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Bias Correction</strong>: Accelerometer and gyroscope bias</li>
+<li class=""><strong>Scale Factor</strong>: Correct for sensor scaling errors</li>
+<li class=""><strong>Alignment</strong>: Coordinate frame alignment</li>
+<li class=""><strong>Temperature Compensation</strong>: Correct for temperature effects</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="lidar-calibration">LiDAR Calibration<a href="#lidar-calibration" class="hash-link" aria-label="Direct link to LiDAR Calibration" title="Direct link to LiDAR Calibration" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Extrinsic Calibration</strong>: Position/orientation relative to robot</li>
+<li class=""><strong>Intrinsic Calibration</strong>: Range accuracy and angular precision</li>
+<li class=""><strong>Multi-LiDAR</strong>: Calibration between multiple units</li>
+<li class=""><strong>Validation</strong>: Regular accuracy verification</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="sensor-mounting-and-placement">Sensor Mounting and Placement<a href="#sensor-mounting-and-placement" class="hash-link" aria-label="Direct link to Sensor Mounting and Placement" title="Direct link to Sensor Mounting and Placement" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="mechanical-considerations">Mechanical Considerations<a href="#mechanical-considerations" class="hash-link" aria-label="Direct link to Mechanical Considerations" title="Direct link to Mechanical Considerations" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Vibration Isolation</strong>: Protect sensitive sensors</li>
+<li class=""><strong>Clear View</strong>: Ensure unobstructed sensor fields of view</li>
+<li class=""><strong>Protection</strong>: Weather and impact protection</li>
+<li class=""><strong>Accessibility</strong>: Easy maintenance and calibration</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="electrical-considerations">Electrical Considerations<a href="#electrical-considerations" class="hash-link" aria-label="Direct link to Electrical Considerations" title="Direct link to Electrical Considerations" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Power Supply</strong>: Proper voltage regulation</li>
+<li class=""><strong>Signal Integrity</strong>: Minimize electromagnetic interference</li>
+<li class=""><strong>Grounding</strong>: Proper electrical grounding</li>
+<li class=""><strong>EMI/RFI</strong>: Electromagnetic compatibility</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="power-and-bandwidth-requirements">Power and Bandwidth Requirements<a href="#power-and-bandwidth-requirements" class="hash-link" aria-label="Direct link to Power and Bandwidth Requirements" title="Direct link to Power and Bandwidth Requirements" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="power-consumption">Power Consumption<a href="#power-consumption" class="hash-link" aria-label="Direct link to Power Consumption" title="Direct link to Power Consumption" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Cameras</strong>: 1-5W depending on resolution and processing</li>
+<li class=""><strong>IMU</strong>: 0.1-1W for typical units</li>
+<li class=""><strong>LiDAR</strong>: 5-20W depending on type and range</li>
+<li class=""><strong>Total System</strong>: 20-100W for comprehensive sensor suite</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="data-bandwidth">Data Bandwidth<a href="#data-bandwidth" class="hash-link" aria-label="Direct link to Data Bandwidth" title="Direct link to Data Bandwidth" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Cameras</strong>: 10-100 MB/s depending on resolution and frame rate</li>
+<li class=""><strong>LiDAR</strong>: 1-10 MB/s for typical units</li>
+<li class=""><strong>IMU</strong>: 1-10 KB/s for typical units</li>
+<li class=""><strong>Network</strong>: 100 Mbps minimum, 1 Gbps recommended</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="safety-and-redundancy">Safety and Redundancy<a href="#safety-and-redundancy" class="hash-link" aria-label="Direct link to Safety and Redundancy" title="Direct link to Safety and Redundancy" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="safety-considerations">Safety Considerations<a href="#safety-considerations" class="hash-link" aria-label="Direct link to Safety Considerations" title="Direct link to Safety Considerations" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Fail-Safe Operation</strong>: Define behavior when sensors fail</li>
+<li class=""><strong>Redundancy</strong>: Multiple sensors for critical functions</li>
+<li class=""><strong>Validation</strong>: Cross-check sensor readings</li>
+<li class=""><strong>Monitoring</strong>: Continuous sensor health monitoring</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="redundancy-strategies">Redundancy Strategies<a href="#redundancy-strategies" class="hash-link" aria-label="Direct link to Redundancy Strategies" title="Direct link to Redundancy Strategies" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Triple Modular Redundancy</strong>: Three sensors for critical measurements</li>
+<li class=""><strong>Cross-Validation</strong>: Use different sensor types for same measurement</li>
+<li class=""><strong>Temporal Redundancy</strong>: Multiple readings over time</li>
+<li class=""><strong>Geographic Redundancy</strong>: Multiple sensors at different locations</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="sensor-testing-and-validation">Sensor Testing and Validation<a href="#sensor-testing-and-validation" class="hash-link" aria-label="Direct link to Sensor Testing and Validation" title="Direct link to Sensor Testing and Validation" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="performance-metrics">Performance Metrics<a href="#performance-metrics" class="hash-link" aria-label="Direct link to Performance Metrics" title="Direct link to Performance Metrics" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Accuracy</strong>: How close measurements are to true values</li>
+<li class=""><strong>Precision</strong>: Repeatability of measurements</li>
+<li class=""><strong>Resolution</strong>: Smallest detectable change</li>
+<li class=""><strong>Response Time</strong>: Time to respond to changes</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="validation-procedures">Validation Procedures<a href="#validation-procedures" class="hash-link" aria-label="Direct link to Validation Procedures" title="Direct link to Validation Procedures" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Laboratory Testing</strong>: Controlled environment validation</li>
+<li class=""><strong>Field Testing</strong>: Real-world performance validation</li>
+<li class=""><strong>Calibration Verification</strong>: Regular accuracy checks</li>
+<li class=""><strong>Long-term Stability</strong>: Monitor drift over time</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="cost-considerations">Cost Considerations<a href="#cost-considerations" class="hash-link" aria-label="Direct link to Cost Considerations" title="Direct link to Cost Considerations" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="budget-sensors">Budget Sensors<a href="#budget-sensors" class="hash-link" aria-label="Direct link to Budget Sensors" title="Direct link to Budget Sensors" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Cameras</strong>: $50-200 for basic units</li>
+<li class=""><strong>IMU</strong>: $10-100 for basic units</li>
+<li class=""><strong>Ultrasonic</strong>: $5-20 per sensor</li>
+<li class=""><strong>Basic Setup</strong>: $200-500 total</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="professional-sensors">Professional Sensors<a href="#professional-sensors" class="hash-link" aria-label="Direct link to Professional Sensors" title="Direct link to Professional Sensors" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>High-Res Cameras</strong>: $200-1000+ per camera</li>
+<li class=""><strong>Professional IMU</strong>: $100-1000+ per unit</li>
+<li class=""><strong>LiDAR</strong>: $500-50000+ depending on type</li>
+<li class=""><strong>Complete Setup</strong>: $2000-100000+ total</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="roi-considerations">ROI Considerations<a href="#roi-considerations" class="hash-link" aria-label="Direct link to ROI Considerations" title="Direct link to ROI Considerations" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Performance Requirements</strong>: Match sensors to application needs</li>
+<li class=""><strong>Integration Complexity</strong>: Consider development time</li>
+<li class=""><strong>Maintenance</strong>: Ongoing calibration and support</li>
+<li class=""><strong>Scalability</strong>: Consider fleet deployment costs</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="troubleshooting-common-issues">Troubleshooting Common Issues<a href="#troubleshooting-common-issues" class="hash-link" aria-label="Direct link to Troubleshooting Common Issues" title="Direct link to Troubleshooting Common Issues" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="sensor-noise">Sensor Noise<a href="#sensor-noise" class="hash-link" aria-label="Direct link to Sensor Noise" title="Direct link to Sensor Noise" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Electromagnetic Interference</strong>: Check grounding and shielding</li>
+<li class=""><strong>Vibration</strong>: Secure mounting and vibration isolation</li>
+<li class=""><strong>Temperature Effects</strong>: Implement temperature compensation</li>
+<li class=""><strong>Power Supply</strong>: Ensure clean, stable power supply</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="communication-issues">Communication Issues<a href="#communication-issues" class="hash-link" aria-label="Direct link to Communication Issues" title="Direct link to Communication Issues" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Bandwidth Limitations</strong>: Reduce data rates or compression</li>
+<li class=""><strong>Protocol Errors</strong>: Verify message formats and timing</li>
+<li class=""><strong>Network Congestion</strong>: Implement priority and buffering</li>
+<li class=""><strong>Synchronization</strong>: Ensure proper timestamping</li>
+</ul>
+<p>This comprehensive sensor stack guide provides the foundation for selecting, integrating, and maintaining the sensor systems essential for Physical AI and Humanoid Robotics applications.</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/hardware/sensor-stack.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/hardware/edge-ai-kits"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Edge AI Kits</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/hardware/robot-options"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Robot Options</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#overview" class="table-of-contents__link toc-highlight">Overview</a></li><li><a href="#sensor-categories" class="table-of-contents__link toc-highlight">Sensor Categories</a><ul><li><a href="#vision-sensors" class="table-of-contents__link toc-highlight">Vision Sensors</a></li><li><a href="#inertial-sensors" class="table-of-contents__link toc-highlight">Inertial Sensors</a></li><li><a href="#range-sensors" class="table-of-contents__link toc-highlight">Range Sensors</a></li><li><a href="#environmental-sensors" class="table-of-contents__link toc-highlight">Environmental Sensors</a></li><li><a href="#proprioceptive-sensors" class="table-of-contents__link toc-highlight">Proprioceptive Sensors</a></li></ul></li><li><a href="#vision-sensors-1" class="table-of-contents__link toc-highlight">Vision Sensors</a><ul><li><a href="#rgb-cameras" class="table-of-contents__link toc-highlight">RGB Cameras</a></li><li><a href="#depth-cameras" class="table-of-contents__link toc-highlight">Depth Cameras</a></li><li><a href="#camera-selection-guide" class="table-of-contents__link toc-highlight">Camera Selection Guide</a></li></ul></li><li><a href="#inertial-sensors-1" class="table-of-contents__link toc-highlight">Inertial Sensors</a><ul><li><a href="#imu-types" class="table-of-contents__link toc-highlight">IMU Types</a></li><li><a href="#key-specifications" class="table-of-contents__link toc-highlight">Key Specifications</a></li><li><a href="#integration-with-robotics" class="table-of-contents__link toc-highlight">Integration with Robotics</a></li></ul></li><li><a href="#range-sensors-1" class="table-of-contents__link toc-highlight">Range Sensors</a><ul><li><a href="#lidar-technologies" class="table-of-contents__link toc-highlight">LiDAR Technologies</a></li><li><a href="#lidar-selection-criteria" class="table-of-contents__link toc-highlight">LiDAR Selection Criteria</a></li><li><a href="#alternative-range-sensors" class="table-of-contents__link toc-highlight">Alternative Range Sensors</a></li></ul></li><li><a href="#environmental-sensors-1" class="table-of-contents__link toc-highlight">Environmental Sensors</a><ul><li><a href="#temperature-and-humidity" class="table-of-contents__link toc-highlight">Temperature and Humidity</a></li><li><a href="#air-quality-sensors" class="table-of-contents__link toc-highlight">Air Quality Sensors</a></li></ul></li><li><a href="#proprioceptive-sensors-1" class="table-of-contents__link toc-highlight">Proprioceptive Sensors</a><ul><li><a href="#joint-position-sensors" class="table-of-contents__link toc-highlight">Joint Position Sensors</a></li><li><a href="#forcetorque-sensors" class="table-of-contents__link toc-highlight">Force/Torque Sensors</a></li></ul></li><li><a href="#sensor-fusion" class="table-of-contents__link toc-highlight">Sensor Fusion</a><ul><li><a href="#data-integration" class="table-of-contents__link toc-highlight">Data Integration</a></li><li><a href="#fusion-strategies" class="table-of-contents__link toc-highlight">Fusion Strategies</a></li></ul></li><li><a href="#ros-2-sensor-integration" class="table-of-contents__link toc-highlight">ROS 2 Sensor Integration</a><ul><li><a href="#standard-interfaces" class="table-of-contents__link toc-highlight">Standard Interfaces</a></li><li><a href="#sensor-drivers" class="table-of-contents__link toc-highlight">Sensor Drivers</a></li></ul></li><li><a href="#sensor-calibration" class="table-of-contents__link toc-highlight">Sensor Calibration</a><ul><li><a href="#camera-calibration" class="table-of-contents__link toc-highlight">Camera Calibration</a></li><li><a href="#imu-calibration" class="table-of-contents__link toc-highlight">IMU Calibration</a></li><li><a href="#lidar-calibration" class="table-of-contents__link toc-highlight">LiDAR Calibration</a></li></ul></li><li><a href="#sensor-mounting-and-placement" class="table-of-contents__link toc-highlight">Sensor Mounting and Placement</a><ul><li><a href="#mechanical-considerations" class="table-of-contents__link toc-highlight">Mechanical Considerations</a></li><li><a href="#electrical-considerations" class="table-of-contents__link toc-highlight">Electrical Considerations</a></li></ul></li><li><a href="#power-and-bandwidth-requirements" class="table-of-contents__link toc-highlight">Power and Bandwidth Requirements</a><ul><li><a href="#power-consumption" class="table-of-contents__link toc-highlight">Power Consumption</a></li><li><a href="#data-bandwidth" class="table-of-contents__link toc-highlight">Data Bandwidth</a></li></ul></li><li><a href="#safety-and-redundancy" class="table-of-contents__link toc-highlight">Safety and Redundancy</a><ul><li><a href="#safety-considerations" class="table-of-contents__link toc-highlight">Safety Considerations</a></li><li><a href="#redundancy-strategies" class="table-of-contents__link toc-highlight">Redundancy Strategies</a></li></ul></li><li><a href="#sensor-testing-and-validation" class="table-of-contents__link toc-highlight">Sensor Testing and Validation</a><ul><li><a href="#performance-metrics" class="table-of-contents__link toc-highlight">Performance Metrics</a></li><li><a href="#validation-procedures" class="table-of-contents__link toc-highlight">Validation Procedures</a></li></ul></li><li><a href="#cost-considerations" class="table-of-contents__link toc-highlight">Cost Considerations</a><ul><li><a href="#budget-sensors" class="table-of-contents__link toc-highlight">Budget Sensors</a></li><li><a href="#professional-sensors" class="table-of-contents__link toc-highlight">Professional Sensors</a></li><li><a href="#roi-considerations" class="table-of-contents__link toc-highlight">ROI Considerations</a></li></ul></li><li><a href="#troubleshooting-common-issues" class="table-of-contents__link toc-highlight">Troubleshooting Common Issues</a><ul><li><a href="#sensor-noise" class="table-of-contents__link toc-highlight">Sensor Noise</a></li><li><a href="#communication-issues" class="table-of-contents__link toc-highlight">Communication Issues</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Textbook</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/intro">Introduction</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://twitter.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Twitter<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Physical AI & Humanoid Robotics Textbook. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

@@ -5,7 +5,7 @@
   "source": "@site/docs/learning-outcomes.md",
   "sourceDirName": ".",
   "slug": "/learning-outcomes",
-  "permalink": "/physical-ai-humanoid-robotics-textbook/docs/learning-outcomes",
+  "permalink": "/docs/learning-outcomes",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/learning-outcomes.md",
@@ -18,10 +18,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Why Physical AI Matters",
-    "permalink": "/physical-ai-humanoid-robotics-textbook/docs/why-physical-ai-matters"
+    "permalink": "/docs/why-physical-ai-matters"
   },
   "next": {
     "title": "How to Use This Book",
-    "permalink": "/physical-ai-humanoid-robotics-textbook/docs/how-to-use"
+    "permalink": "/docs/how-to-use"
   }
 }

@@ -8,7 +8,7 @@ export default {
   "tagline": "A Comprehensive Textbook on Embodied Intelligence",
   "favicon": "img/favicon.ico",
   "url": "https://your-organization.github.io",
-  "baseUrl": "/physical-ai-humanoid-robotics-textbook/",
+  "baseUrl": "/",
   "organizationName": "your-organization",
   "projectName": "physical-ai-humanoid-robotics-textbook",
   "onBrokenLinks": "throw",

@@ -5,7 +5,7 @@
   "source": "@site/docs/hardware/sensor-stack.md",
   "sourceDirName": "hardware",
   "slug": "/hardware/sensor-stack",
-  "permalink": "/physical-ai-humanoid-robotics-textbook/docs/hardware/sensor-stack",
+  "permalink": "/docs/hardware/sensor-stack",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/hardware/sensor-stack.md",
@@ -18,10 +18,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Edge AI Kits",
-    "permalink": "/physical-ai-humanoid-robotics-textbook/docs/hardware/edge-ai-kits"
+    "permalink": "/docs/hardware/edge-ai-kits"
   },
   "next": {
     "title": "Robot Options",
-    "permalink": "/physical-ai-humanoid-robotics-textbook/docs/hardware/robot-options"
+    "permalink": "/docs/hardware/robot-options"
   }
 }

@@ -5,7 +5,7 @@
   "source": "@site/docs/module-3/isaac-sim-introduction.md",
   "sourceDirName": "module-3",
   "slug": "/module-3/isaac-sim-introduction",
-  "permalink": "/physical-ai-humanoid-robotics-textbook/docs/module-3/isaac-sim-introduction",
+  "permalink": "/docs/module-3/isaac-sim-introduction",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-3/isaac-sim-introduction.md",
@@ -18,10 +18,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Digital Twin Review Questions",
-    "permalink": "/physical-ai-humanoid-robotics-textbook/docs/module-2/digital-twin-review-questions"
+    "permalink": "/docs/module-2/digital-twin-review-questions"
   },
   "next": {
     "title": "Isaac ROS Integration",
-    "permalink": "/physical-ai-humanoid-robotics-textbook/docs/module-3/isaac-ros-integration"
+    "permalink": "/docs/module-3/isaac-ros-integration"
   }
 }
