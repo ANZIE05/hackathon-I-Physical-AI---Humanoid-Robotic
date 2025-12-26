@@ -1,159 +1,129 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import { useHistory } from '@docusaurus/router';
 
-const RAGChatbot = () => {
-  const [query, setQuery] = useState('');
-  const [response, setResponse] = useState('');
-  const [isLoading, setIsLoading] = useState(false);
-  const [history, setHistory] = useState([]);
-  const [selectedText, setSelectedText] = useState('');
+export default function RAGChatbot() {
+  const [question, setQuestion] = useState('');
+  const [results, setResults] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
 
-  // Function to get selected text from the page
-  useEffect(() => {
-    const handleSelection = () => {
-      const selectedText = window.getSelection().toString().trim();
-      if (selectedText) {
-        setSelectedText(selectedText);
-      }
-    };
-
-    document.addEventListener('selectionchange', handleSelection);
-    return () => {
-      document.removeEventListener('selectionchange', handleSelection);
-    };
-  }, []);
+  const history = useHistory();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!query.trim() || isLoading) return;
+    if (!question.trim() || loading) return;
 
-    setIsLoading(true);
+    setLoading(true);
+    setError('');
+    setResults([]);
 
     try {
-      // Prepare the request payload
-      const requestBody = {
-        query: query,
-        selected_text: selectedText || null,
-        top_k: 5,
-        temperature: 0.7
-      };
-
-      // Call the RAG API - adjust the URL based on your deployment
-      const response = await fetch('/rag/query', {
+      const res = await fetch('http://localhost:8000/query', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(requestBody),
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          question: question,
+          top_k: 5,
+        }),
       });
 
-      if (!response.ok) {
-        throw new Error(`API request failed with status ${response.status}`);
+      if (!res.ok) {
+        throw new Error(`Request failed: ${res.status}`);
       }
 
-      const data = await response.json();
-
-      setResponse(data.response);
-
-      // Add to history
-      setHistory(prev => [
-        ...prev,
-        { query, response: data.response, sources: data.sources }
-      ]);
-
-      // Clear the input
-      setQuery('');
-    } catch (error) {
-      console.error('Error calling RAG API:', error);
-      setResponse('Sorry, there was an error processing your request.');
+      const data = await res.json();
+      setResults(data);
+      setQuestion('');
+    } catch (err) {
+      console.error(err);
+      setError('Failed to query the textbook assistant.');
     } finally {
-      setIsLoading(false);
+      setLoading(false);
     }
   };
 
-  return (
-    <div className="rag-chatbot-container" style={{
-      border: '1px solid #ccc',
-      borderRadius: '8px',
-      padding: '16px',
-      marginTop: '16px',
-      backgroundColor: '#f9f9f9'
-    }}>
-      <h3>Textbook Assistant</h3>
+  const openDoc = (page) => {
+    const docPath = page.replace('.md', '');
+    history.push(`/docs/${docPath}`);
+  };
 
-      {selectedText && (
-        <div style={{
-          backgroundColor: '#e3f2fd',
-          padding: '8px',
-          borderRadius: '4px',
-          marginBottom: '8px',
-          fontSize: '0.9em'
-        }}>
-          <strong>Selected Text:</strong> {selectedText.substring(0, 100)}...
-        </div>
-      )}
+  return (
+    <div
+      style={{
+        border: '1px solid #ddd',
+        borderRadius: '8px',
+        padding: '16px',
+        marginTop: '24px',
+        background: '#fafafa',
+      }}
+    >
+      <h3>📘 Textbook Assistant</h3>
 
       <form onSubmit={handleSubmit} style={{ marginBottom: '16px' }}>
-        <div style={{ display: 'flex', gap: '8px', marginBottom: '8px' }}>
+        <div style={{ display: 'flex', gap: '8px' }}>
           <input
             type="text"
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            placeholder="Ask a question about this textbook..."
+            value={question}
+            onChange={(e) => setQuestion(e.target.value)}
+            placeholder="Ask a question from the textbook…"
             style={{
               flex: 1,
               padding: '8px',
+              borderRadius: '4px',
               border: '1px solid #ccc',
-              borderRadius: '4px'
             }}
           />
           <button
             type="submit"
-            disabled={isLoading || !query.trim()}
+            disabled={loading}
             style={{
+              cursor: 'pointer',
               padding: '8px 16px',
-              backgroundColor: isLoading ? '#ccc' : '#007cba',
-              color: 'white',
-              border: 'none',
               borderRadius: '4px',
-              cursor: isLoading ? 'not-allowed' : 'pointer'
+              border: 'none',
+              background: loading ? '#ccc' : '#007acc',
+              color: '#fff',
             }}
           >
-            {isLoading ? 'Asking...' : 'Ask'}
+            {loading ? 'Searching…' : 'Ask'}
           </button>
         </div>
       </form>
 
-      {response && (
-        <div style={{
-          padding: '12px',
-          backgroundColor: 'white',
-          borderRadius: '4px',
-          border: '1px solid #eee'
-        }}>
-          <h4>Answer:</h4>
-          <p>{response}</p>
-        </div>
-      )}
+      {error && <div style={{ color: 'red' }}>{error}</div>}
 
-      {history.length > 0 && (
-        <div style={{ marginTop: '16px' }}>
-          <h4>Chat History:</h4>
-          <div style={{ maxHeight: '200px', overflowY: 'auto' }}>
-            {history.map((item, index) => (
-              <div key={index} style={{
+      {results.length > 0 && (
+        <div>
+          <h4>Relevant Sections</h4>
+
+          {results.map((item, index) => (
+            <div
+              key={index}
+              onClick={() => openDoc(item.page)}
+              style={{
+                cursor: 'pointer',
                 marginBottom: '12px',
-                paddingBottom: '12px',
-                borderBottom: '1px solid #eee'
-              }}>
-                <div><strong>Q:</strong> {item.query}</div>
-                <div><strong>A:</strong> {item.response}</div>
+                padding: '10px',
+                border: '1px solid #eee',
+                borderRadius: '4px',
+                background: '#fff',
+              }}
+            >
+              <div>
+                📄 <strong>{item.page.replace('.md', '')}</strong>
               </div>
-            ))}
-          </div>
+
+              <div style={{ fontSize: '0.85em', color: '#666' }}>
+                Score: {item.score.toFixed(3)}
+              </div>
+
+              <div style={{ fontSize: '0.8em', color: '#007acc' }}>
+                Click to open →
+              </div>
+            </div>
+          ))}
         </div>
       )}
     </div>
   );
-};
-
-export default RAGChatbot;
+}

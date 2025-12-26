@@ -1,214 +1,257 @@
 {
-  "/docs-8b1": {
-    "__comp": "5e95c892",
+  "/__docusaurus/debug-5ff": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
     "__context": {
-      "plugin": "aba21aa0"
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/config-5ba": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/content-a2b": {
+    "__comp": "__comp---theme-debug-contentba-8-ce7",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    },
+    "__props": "__props---docusaurus-debug-content-3-c-0-be2"
+  },
+  "/__docusaurus/debug/globalData-c3c": {
+    "__comp": "__comp---theme-debug-global-dataede-0fa",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/metadata-156": {
+    "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/registry-88c": {
+    "__comp": "__comp---theme-debug-registry-679-501",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/routes-000": {
+    "__comp": "__comp---theme-debug-routes-946-699",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/docs-8b1": {
+    "__comp": "__comp---theme-docs-root-5-e-9-0b6",
+    "__context": {
+      "plugin": "plugin---docsaba-d7c"
     }
   },
   "/docs-31b": {
-    "__comp": "a7bd4aaa",
-    "__props": "0058b4c6"
+    "__comp": "__comp---theme-doc-version-roota-7-b-5de",
+    "__props": "__props---docs-005-788"
   },
   "/docs-385": {
-    "__comp": "a94703ab"
+    "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/docs/appendices/further-learning-e1b": {
-    "__comp": "17896441",
-    "content": "21e6a146"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-appendices-further-learning-21-e-156"
   },
   "/docs/appendices/glossary-aed": {
-    "__comp": "17896441",
-    "content": "3bcc7dc1"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-appendices-glossary-3-bc-f73"
   },
   "/docs/appendices/tool-references-a8a": {
-    "__comp": "17896441",
-    "content": "9c7c0d95"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-appendices-tool-references-9-c-7-997"
   },
   "/docs/appendices/troubleshooting-e74": {
-    "__comp": "17896441",
-    "content": "bd6d8672"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-appendices-troubleshootingbd-6-c27"
   },
   "/docs/assessments/capstone-project-569": {
-    "__comp": "17896441",
-    "content": "8bf3a500"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-assessments-capstone-project-8-bf-870"
   },
   "/docs/assessments/gazebo-project-106": {
-    "__comp": "17896441",
-    "content": "96089f4a"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-assessments-gazebo-project-960-fdf"
   },
   "/docs/assessments/isaac-project-a0a": {
-    "__comp": "17896441",
-    "content": "bc1eafb0"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-assessments-isaac-projectbc-1-0a7"
   },
   "/docs/assessments/ros2-project-f21": {
-    "__comp": "17896441",
-    "content": "6edf206b"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-assessments-ros-2-project-6-ed-8e8"
   },
   "/docs/capstone/capstone-architecture-5e0": {
-    "__comp": "17896441",
-    "content": "72059239"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-capstone-capstone-architecture-720-c6f"
   },
   "/docs/capstone/capstone-evaluation-efd": {
-    "__comp": "17896441",
-    "content": "652d6b06"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-capstone-capstone-evaluation-652-bcb"
   },
   "/docs/capstone/end-to-end-pipeline-f51": {
-    "__comp": "17896441",
-    "content": "9744919b"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-capstone-end-to-end-pipeline-974-54c"
   },
   "/docs/hardware/edge-ai-kits-63f": {
-    "__comp": "17896441",
-    "content": "7dd2bfb4"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-hardware-edge-ai-kits-7-dd-c8f"
   },
   "/docs/hardware/lab-models-160": {
-    "__comp": "17896441",
-    "content": "f09f9c23"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-hardware-lab-modelsf-09-d0f"
   },
   "/docs/hardware/robot-options-d5f": {
-    "__comp": "17896441",
-    "content": "bb58f317"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-hardware-robot-optionsbb-5-b41"
   },
   "/docs/hardware/sensor-stack-6f1": {
-    "__comp": "17896441",
-    "content": "ef15c4d9"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-hardware-sensor-stackef-1-b22"
   },
   "/docs/hardware/workstation-requirements-345": {
-    "__comp": "17896441",
-    "content": "a11d8b5c"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-hardware-workstation-requirementsa-11-267"
   },
   "/docs/how-to-use-f96": {
-    "__comp": "17896441",
-    "content": "f4c57b23"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-how-to-usef-4-c-095"
   },
   "/docs/intro-61d": {
-    "__comp": "17896441",
-    "content": "0e384e19"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-intro-0-e-3-be1"
   },
   "/docs/learning-outcomes-769": {
-    "__comp": "17896441",
-    "content": "8b222800"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-learning-outcomes-8-b-2-451"
   },
   "/docs/module-1/rclpy-integration-24c": {
-    "__comp": "17896441",
-    "content": "6efde889"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-1-rclpy-integration-6-ef-d53"
   },
   "/docs/module-1/ros2-architecture-58b": {
-    "__comp": "17896441",
-    "content": "45736d69"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-1-ros-2-architecture-457-7ea"
   },
   "/docs/module-1/ros2-fundamentals-d9b": {
-    "__comp": "17896441",
-    "content": "8a74af7a"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-1-ros-2-fundamentals-8-a-7-4b1"
   },
   "/docs/module-1/ros2-practical-labs-a6a": {
-    "__comp": "17896441",
-    "content": "a2cba802"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-1-ros-2-practical-labsa-2-c-959"
   },
   "/docs/module-1/ros2-review-questions-67d": {
-    "__comp": "17896441",
-    "content": "ee306fe7"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-1-ros-2-review-questionsee-3-fba"
   },
   "/docs/module-1/urdf-basics-c35": {
-    "__comp": "17896441",
-    "content": "180eac42"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-1-urdf-basics-180-fef"
   },
   "/docs/module-2/digital-twin-practical-labs-090": {
-    "__comp": "17896441",
-    "content": "d9cf1838"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-2-digital-twin-practical-labsd-9-c-da2"
   },
   "/docs/module-2/digital-twin-review-questions-ac1": {
-    "__comp": "17896441",
-    "content": "d9ed1ecf"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-2-digital-twin-review-questionsd-9-e-25c"
   },
   "/docs/module-2/gazebo-fundamentals-8d4": {
-    "__comp": "17896441",
-    "content": "66fe6bf4"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-2-gazebo-fundamentals-66-f-9e3"
   },
   "/docs/module-2/gazebo-workflows-2e2": {
-    "__comp": "17896441",
-    "content": "6aa94ea6"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-2-gazebo-workflows-6-aa-496"
   },
   "/docs/module-2/physics-simulation-e1f": {
-    "__comp": "17896441",
-    "content": "9e891ab5"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-2-physics-simulation-9-e-8-2b8"
   },
   "/docs/module-2/sensor-simulation-6e6": {
-    "__comp": "17896441",
-    "content": "35099b4b"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-2-sensor-simulation-350-f94"
   },
   "/docs/module-2/unity-visualization-84b": {
-    "__comp": "17896441",
-    "content": "e36df906"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-2-unity-visualizatione-36-539"
   },
   "/docs/module-3/isaac-ros-integration-3ba": {
-    "__comp": "17896441",
-    "content": "29055cdc"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-3-isaac-ros-integration-290-a28"
   },
   "/docs/module-3/isaac-sim-fundamentals-e12": {
-    "__comp": "17896441",
-    "content": "ee016311"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-3-isaac-sim-fundamentalsee-0-f38"
   },
   "/docs/module-3/isaac-sim-introduction-ef7": {
-    "__comp": "17896441",
-    "content": "f64a0715"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-3-isaac-sim-introductionf-64-685"
   },
   "/docs/module-3/isaac-sim-workflows-e9e": {
-    "__comp": "17896441",
-    "content": "4b9e2a5a"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-3-isaac-sim-workflows-4-b-9-142"
   },
   "/docs/module-3/sim-to-real-principles-9a1": {
-    "__comp": "17896441",
-    "content": "a73671ba"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-3-sim-to-real-principlesa-73-e78"
   },
   "/docs/module-3/vslam-practical-labs-271": {
-    "__comp": "17896441",
-    "content": "640bab3f"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-3-vslam-practical-labs-640-571"
   },
   "/docs/module-3/vslam-systems-11f": {
-    "__comp": "17896441",
-    "content": "906e762e"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-3-vslam-systems-906-d17"
   },
   "/docs/module-4/vla-fundamentals-0ad": {
-    "__comp": "17896441",
-    "content": "604516ff"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-4-vla-fundamentals-604-609"
   },
   "/docs/rag/chatbot-overview-b93": {
-    "__comp": "17896441",
-    "content": "d037455e"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-rag-chatbot-overviewd-03-849"
   },
   "/docs/rag/content-chunking-807": {
-    "__comp": "17896441",
-    "content": "ec7513d2"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-rag-content-chunkingec-7-099"
   },
   "/docs/rag/embedding-strategy-7be": {
-    "__comp": "17896441",
-    "content": "57898bcb"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-rag-embedding-strategy-578-e1e"
   },
   "/docs/rag/response-logic-a05": {
-    "__comp": "17896441",
-    "content": "f9369594"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-rag-response-logicf-93-f63"
   },
   "/docs/textbook-assistant-9b8": {
-    "__comp": "17896441",
-    "content": "01a55946"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-textbook-assistant-01-a-447"
   },
   "/docs/tooling-environment-d31": {
-    "__comp": "17896441",
-    "content": "38822fe4"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-tooling-environment-388-533"
   },
   "/docs/weekly-breakdown-776": {
-    "__comp": "17896441",
-    "content": "2ab8ccb5"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-weekly-breakdown-2-ab-35c"
   },
   "/docs/why-physical-ai-matters-2f4": {
-    "__comp": "17896441",
-    "content": "744d030f"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-why-physical-ai-matters-744-9a8"
   },
   "/-2e1": {
-    "__comp": "c4f5d8e4",
+    "__comp": "__comp---site-src-pages-index-jsc-4-f-f99",
     "__context": {
-      "plugin": "a7456010"
+      "plugin": "plugin---a-74-9d6"
     },
-    "config": "5e9f5e1a"
+    "config": "config---5-e-9-4f3"
   }
 }
