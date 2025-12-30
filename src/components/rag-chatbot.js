@@ -18,7 +18,7 @@ export default function RAGChatbot() {
     setResults([]);
 
     try {
-      const res = await fetch('http://localhost:8000/query', {
+      const res = await fetch('http://web-production-1b36.up.railway.app/query', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
